@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: sigproc-sp.aux
+The style file: abbrv.bst
+Database file #1: sigproc.bib
+Warning--I didn't find a database entry for "???"
+You've used 10 entries,
+            2118 wiz_defined-function locations,
+            564 strings with 5384 characters,
+and the built_in function-call counts, 3202 in all, are:
+= -- 319
+> -- 141
+< -- 1
++ -- 56
+- -- 46
+* -- 218
+:= -- 546
+add.period$ -- 31
+call.type$ -- 10
+change.case$ -- 51
+chr.to.int$ -- 0
+cite$ -- 10
+duplicate$ -- 122
+empty$ -- 254
+format.name$ -- 46
+if$ -- 660
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 12
+newline$ -- 53
+num.names$ -- 20
+pop$ -- 54
+preamble$ -- 1
+purify$ -- 43
+quote$ -- 0
+skip$ -- 80
+stack$ -- 0
+substring$ -- 207
+swap$ -- 20
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 36
+warning$ -- 0
+while$ -- 33
+width$ -- 12
+write$ -- 109
+(There was 1 warning)

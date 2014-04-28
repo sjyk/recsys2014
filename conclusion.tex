@@ -1,0 +1,23 @@
+\section{Future Work}
+The methods we proposed have several interesting directions of future interest. 
+We want to extend our work to quantify biases in textual data. 
+The California Report Card collects textual suggestions from participants in addition to the quantiative assesment results. 
+Participants are encouraged to read the responses of others before leaving a suggestion of their own.
+We suspect that this may lead to a bias in the topics discussed by participants, and we would like to explore how similar non-parametric models can be extended to textual data.
+
+Another compelling direction is to attempt to parameterize our model.
+We will explore whether we can model the grades as a mixture of binomial distributions (a discrete analog of a mixture of gaussians), and try to derive optimal tests and models for this data.
+Intuitively, parametrization should lead to increased statistical power and better fitting models; assuming that the data fits the underlying parametrization.
+
+\section{Conclusion}
+We proposed non-parametric hypothesis tests and models to evaluate the biasing tendency of visible aggregate statistics in the California Report Card.
+We found that revealing the median led to a statistically significantly tighter grouping of grades around the shown median grade.
+
+We modeled the biasing effect as a regression towards the median grade and fit polynomial to represent the functional relationship between a participant's observed difference with the median and then subsequent grade change.
+We applied an information theoretic criteria to select a model of appropriate complexity.
+We found that this relationship was quadratic in two out of the six issues, representing a heterogeneity in biasing for positive and negative differences with the median.
+We further showed how non-parametric ideas could be extended to the problem of Wilcoxon shift parameter estimation and quantify the effects of the biasing tendency.
+
+In principle, the methods we proposed can be applied to test and model biases in a wide variety input mechanisms.
+This is a key motivation for our non-parametric approach.
+Understanding these biases, can give insight into the behavior of recommender systems that train on such data.

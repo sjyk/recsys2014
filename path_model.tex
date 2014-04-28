@@ -1,0 +1,38 @@
+\section{Sequence Dependence}
+\label{path}
+In the CRC, we pose each of the six issues in a constant order.
+In this section, we develop a model for testing the effect of the sequence of ratings.
+In \cite{???}, the authors suggest that \emph{path depedence} is significant in online tools.
+In particular, we test to see whether deviation from the median on previous issues is correlated with deviation on the current issue.
+We test the following hypothesis: if participants observe that their grades significantly deviate from the median on previous questions, their future responses will be more tightly centered around the median.
+
+This hypothesis is challenging to test as responses to issues may be correlated; even excluding the bias.
+Consider the following example, if the grades are positively correlated, then low grades on one question could imply even lower grades on another.
+In this case, we would see an increase in deviations even though it is not attributable to the biasing tendency.
+Consequently, we build a model that compares the CRC to the SurveyMonkey reference survey.
+We test to see if the relationship between the deviation of a participant's past grades and their current grades is different between the CRC and reference survey.
+
+Let $d_{ij}$ be the absolute deviation from the median grade of participant $j$'s grade on issue $i$. 
+We define a statistic $P_{ij}$, which is the mean of all of the absolute deviations on the previous issues:
+\begin{equation}
+P_{ij} = \frac{1}{i-1} \sum_{k < i}  d_{kj}
+\end{equation}
+For each issue $i > 1$, we can get a set of differences between the absolute deviation of the current issue and the average previous absolute deviations:
+\begin{equation}
+D = \{(P_{ij}-d_{ij})\} \forall j
+\end{equation}
+We can calculate the same statistic $D_r$ for deviations for the reference survey.
+For a given issue, these two sets illustrate the trend in deviations from the median.
+A large positive value implies that a participant who disagreed greatly with the median grade before is now much closer to the median.
+Conversely, a negative value implies their response deviates more.
+
+While this statistic is difficult to intepret for an individual participant as their assesments may vary issue to issue, we can compare the distributions of differences from the CRC and Reference Survey.
+The two sets can be tested with the Wilcoxon model in the previous section.
+The results in \cite{???} suggest that the CRC should show larger differences; corresponding to increasingly moderate grades by participants who observed that they disagreed with the median in the past.
+Thus, we test to see if the differences in the set from the CRC $D$ are statistically significantly higher than those from the reference survey $D_r$.
+The Wilcoxon testing procedure is the following: (1) we rank the differences in $D \cup D_r$, (2) we calculate $W$ which is the sum of the ranks in D, and 
+(3) using the equation from the previous section we test the calculated W under the null hypothesis distribution.
+
+A significant result means that in comparision to the reference survey, CRC participants future responses were more concentrated around the median (ie. a higher difference between $P_{ij} - d_{ij}$.
+This test is particularly interesting in the context of initial grades rather than final ones.
+We can test to see how the concentration of grades around the median changes even without the biasing effect of revealing the median, and whether participants have a tendency to \emph{guess} the median grade.
