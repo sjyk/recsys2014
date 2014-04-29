@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  28 APR 2014 14:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 APR 2014 08:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -287,39 +287,90 @@ LaTeX Warning: No \author given.
 File: ../plots/grading-desc-1.png Graphic file (type png)
 
 <use ../plots/grading-desc-1.png>
-Package pdftex.def Info: ../plots/grading-desc-1.png used on input line 14.
+Package pdftex.def Info: ../plots/grading-desc-1.png used on input line 11.
 (pdftex.def)             Requested size: 240.0pt x 120.74232pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 2088) has occurred while \output is active []
+Overfull \hbox (1.01465pt too wide) in paragraph at lines 16--20
+[]\T1/aer/m/n/9 A com-mon feed-back mech-a-nism is the use of ag-gre-gate stati
+s-
+ []
 
- [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+LaTeX Warning: Citation `shneiderman1992designing' on page \thepage  undefined 
+on input line 24.
+
+[1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <../plots/grading-desc-1.png>]) (./crc_description.tex
+ <../plots/grading-desc-1.png>]) (./related_work.tex
+
+LaTeX Warning: Citation `asch1956studies' on page \thepage  undefined on input 
+line 2.
+
+
+LaTeX Warning: Citation `asch1955opinions' on page \thepage  undefined on input
+ line 2.
+
+
+LaTeX Warning: Citation `bond1996culture' on page \thepage  undefined on input 
+line 2.
+
+
+LaTeX Warning: Citation `banerjee1992simple' on page \thepage  undefined on inp
+ut line 6.
+
+
+LaTeX Warning: Citation `bikhchandani2000herd' on page \thepage  undefined on i
+nput line 6.
+
+
+LaTeX Warning: Citation `burnkrant1975informational' on page \thepage  undefine
+d on input line 6.
+
+
+LaTeX Warning: Citation `dholakia2002auction' on page \thepage  undefined on in
+put line 6.
+
+
+LaTeX Warning: Citation `huang2006herding' on page \thepage  undefined on input
+ line 6.
+
+
+LaTeX Warning: Citation `lorenz2011social' on page \thepage  undefined on input
+ line 7.
+
+
+LaTeX Warning: Citation `danescu2009opinions' on page \thepage  undefined on in
+put line 9.
+
+
+LaTeX Warning: Citation `zhu2012switch' on page \thepage  undefined on input li
+ne 16.
+
+
+LaTeX Warning: Citation `siposreview' on page \thepage  undefined on input line
+ 20.
+
+) (./crc_description.tex
 Overfull \hbox (14.3721pt too wide) in paragraph at lines 16--17
 []\T1/aer/m/n/9 Implementation of the Af-ford-able Care Act ("Oba-macare") 
  []
 
-<../plots/grading-behavior-1.png, id=14, 583.4598pt x 354.123pt>
+[2] <../plots/grading-behavior-1.png, id=21, 583.4598pt x 354.123pt>
 File: ../plots/grading-behavior-1.png Graphic file (type png)
 
 <use ../plots/grading-behavior-1.png>
 Package pdftex.def Info: ../plots/grading-behavior-1.png used on input line 43.
 
 (pdftex.def)             Requested size: 240.0pt x 145.66145pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 ) (./significance_model.tex
 
 LaTeX Warning: Citation `???' on page \thepage  undefined on input line 5.
 
-[2]
 
 LaTeX Warning: Citation `???' on page \thepage  undefined on input line 14.
 
@@ -328,9 +379,6 @@ LaTeX Warning: Citation `???' on page \thepage  undefined on input line 18.
 
 
 LaTeX Warning: Citation `???' on page \thepage  undefined on input line 18.
-
-
-Underfull \vbox (badness 1292) has occurred while \output is active []
 
 Package epstopdf Info: Source file: <../plots/absolute-deviations.eps>
 (epstopdf)                    date: 2014-04-21 10:24:29
@@ -356,11 +404,11 @@ Package pdftex.def Info: ../plots/absolute-deviations-eps-converted-to.pdf used
 
 LaTeX Warning: Citation `???' on page \thepage  undefined on input line 61.
 
-) (./path_model.tex [3 <../plots/grading-behavior-1.png> <../plots/absolute-dev
-iations-eps-converted-to.pdf>]
+) (./path_model.tex
 
 LaTeX Warning: Citation `???' on page \thepage  undefined on input line 5.
 
+[3 <../plots/grading-behavior-1.png>]
 
 LaTeX Warning: Citation `???' on page \thepage  undefined on input line 31.
 
@@ -381,12 +429,11 @@ tric
 
 LaTeX Warning: Citation `???' on page \thepage  undefined on input line 23.
 
-
+[4 <../plots/absolute-deviations-eps-converted-to.pdf>]
 Overfull \hbox (7.0636pt too wide) in paragraph at lines 33--38
 \T1/aer/m/n/9 We can fur-ther es-ti-mate how much more con-cen-trated changed
  []
 
-[4]
 
 LaTeX Warning: Citation `???' on page \thepage  undefined on input line 39.
 
@@ -459,6 +506,8 @@ File: ../plots/path-dependence-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../plots/path-dependence-eps-converted-to.pdf used on 
 input line 70.
 (pdftex.def)             Requested size: 240.0pt x 169.83829pt.
+ [5 <../plots/abs-deviations-1-eps-converted-to.pdf> <../plots/path-dependence-
+eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../plots/BIC-optimization.eps>
 (epstopdf)                    date: 2014-04-20 20:56:36
 (epstopdf)                    size: 22866 bytes
@@ -471,7 +520,7 @@ ps-converted-to.pdf ../plots/BIC-optimization.eps>
 (epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/BIC-optimization-eps-converted-to.pdf, id=43, 1439.3775pt x 696.6025p
+<../plots/BIC-optimization-eps-converted-to.pdf, id=56, 1439.3775pt x 696.6025p
 t>
 File: ../plots/BIC-optimization-eps-converted-to.pdf Graphic file (type pdf)
  <use ../plots/BIC-optimization-eps-converted-to.pdf>
@@ -490,7 +539,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/BIC-optimization-2-eps-converted-to.pdf, id=44, 1439.3775pt x 733.741
+<../plots/BIC-optimization-2-eps-converted-to.pdf, id=57, 1439.3775pt x 733.741
 26pt>
 File: ../plots/BIC-optimization-2-eps-converted-to.pdf Graphic file (type pdf)
  <use ../plots/BIC-optimization-2-eps-converted-to.pdf>
@@ -504,8 +553,6 @@ LaTeX Warning: Citation `???' on page \thepage  undefined on input line 98.
 
 LaTeX Warning: Citation `???' on page \thepage  undefined on input line 98.
 
-[5 <../plots/abs-deviations-1-eps-converted-to.pdf> <../plots/path-dependence-e
-ps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../plots/shift-parameter.eps>
 (epstopdf)                    date: 2014-04-20 21:26:45
 (epstopdf)                    size: 8075 bytes
@@ -517,7 +564,6 @@ pdf>
 s-converted-to.pdf ../plots/shift-parameter.eps>
 (epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
-
 <../plots/shift-parameter-eps-converted-to.pdf, id=58, 620.3175pt x 433.62pt>
 File: ../plots/shift-parameter-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -525,28 +571,25 @@ File: ../plots/shift-parameter-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../plots/shift-parameter-eps-converted-to.pdf used on 
 input line 102.
 (pdftex.def)             Requested size: 240.0pt x 167.76135pt.
+) (./conclusion.tex)
+[6 <../plots/shift-parameter-eps-converted-to.pdf>] (./sigproc-sp.bbl) [7
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
-(./conclusion.tex) (./sigproc-sp.bbl [6 <../plots/shift-parameter-eps-converted
--to.pdf>]) [7
-
-] [8 <../plots/bias-1-eps-converted-to.pdf> <../plots/BIC-optimization-eps-conv
-erted-to.pdf> <../plots/BIC-optimization-2-eps-converted-to.pdf>]
+]
+[8 <../plots/bias-1-eps-converted-to.pdf> <../plots/BIC-optimization-eps-conver
+ted-to.pdf> <../plots/BIC-optimization-2-eps-converted-to.pdf>]
 (./sigproc-sp.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2870 strings out of 493315
- 37766 string characters out of 6137904
- 103079 words of memory out of 5000000
- 6221 multiletter control sequences out of 15000+600000
+ 2886 strings out of 493315
+ 38066 string characters out of 6137904
+ 101079 words of memory out of 5000000
+ 6234 multiletter control sequences out of 15000+600000
  52161 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,8n,28p,820b,232s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,8n,28p,452b,232s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/
@@ -562,7 +605,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2013/texmf
 exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (8 pages, 484659 bytes).
+Output written on sigproc-sp.pdf (8 pages, 486495 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream
