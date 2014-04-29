@@ -7,15 +7,55 @@ J.~Albors, J.~C. Ramos, and J.~L. Hervas.
 \newblock {\em International Journal of Information Management},
   28(3):194--202, 2008.
 
-\bibitem{crc}
-U.~C. DDI.
-\newblock California report card.
-\newblock {\em http://californiareportcard.org/}, 2014.
+\bibitem{asch1955opinions}
+S.~E. Asch.
+\newblock Opinions and social pressure.
+\newblock {\em Readings about the social animal}, pages 17--26, 1955.
+
+\bibitem{asch1956studies}
+S.~E. Asch.
+\newblock {\em Studies of independence and conformity}.
+\newblock American Psychological Association, 1956.
+
+\bibitem{banerjee1992simple}
+A.~V. Banerjee.
+\newblock A simple model of herd behavior.
+\newblock {\em The Quarterly Journal of Economics}, 107(3):797--817, 1992.
+
+\bibitem{bikhchandani2000herd}
+S.~Bikhchandani and S.~Sharma.
+\newblock Herd behavior in financial markets: A review.
+\newblock 2000.
+
+\bibitem{bond1996culture}
+R.~Bond and P.~B. Smith.
+\newblock Culture and conformity: A meta-analysis of studies using asch's
+  (1952b, 1956) line judgment task.
+\newblock {\em Psychological bulletin}, 119(1):111, 1996.
+
+\bibitem{burnkrant1975informational}
+R.~E. Burnkrant and A.~Cousineau.
+\newblock Informational and normative social influence in buyer behavior.
+\newblock {\em Journal of Consumer research}, pages 206--215, 1975.
+
+\bibitem{danescu2009opinions}
+C.~Danescu-Niculescu-Mizil, G.~Kossinets, J.~Kleinberg, and L.~Lee.
+\newblock How opinions are received by online communities: a case study on
+  amazon. com helpfulness votes.
+\newblock In {\em Proceedings of the 18th international conference on World
+  wide web}, pages 141--150. ACM, 2009.
 
 \bibitem{demarzo2003persuasion}
 P.~M. DeMarzo, D.~Vayanos, and J.~Zwiebel.
 \newblock Persuasion bias, social influence, and unidimensional opinions.
 \newblock {\em The Quarterly Journal of Economics}, 118(3):909--968, 2003.
+
+\bibitem{dholakia2002auction}
+U.~M. Dholakia, S.~Basuroy, and K.~Soltysinski.
+\newblock Auction or agent (or both)? a study of moderators of the herding bias
+  in digital auctions.
+\newblock {\em International Journal of Research in Marketing}, 19(2):115--130,
+  2002.
 
 \bibitem{groves2013survey}
 R.~M. Groves, F.~J. Fowler~Jr, M.~P. Couper, J.~M. Lepkowski, E.~Singer, and
@@ -23,10 +63,21 @@ R.~M. Groves, F.~J. Fowler~Jr, M.~P. Couper, J.~M. Lepkowski, E.~Singer, and
 \newblock {\em Survey methodology}.
 \newblock John Wiley \& Sons, 2013.
 
+\bibitem{huang2006herding}
+J.-H. Huang and Y.-F. Chen.
+\newblock Herding in online product choice.
+\newblock {\em Psychology \& Marketing}, 23(5):413--428, 2006.
+
 \bibitem{lehmann2006nonparametrics}
 E.~L. Lehmann and H.~J. D'Abrera.
 \newblock {\em Nonparametrics: statistical methods based on ranks}.
 \newblock Springer New York, 2006.
+
+\bibitem{lorenz2011social}
+J.~Lorenz, H.~Rauhut, F.~Schweitzer, and D.~Helbing.
+\newblock How social influence can undermine the wisdom of crowd effect.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  108(22):9020--9025, 2011.
 
 \bibitem{moscovici1972social}
 S.~Moscovici and C.~Faucheux.
@@ -51,9 +102,27 @@ K.~O'Hara.
 \newblock In {\em Proceedings of the 3rd Annual ACM Web Science Conference},
   pages 223--232. ACM, 2012.
 
+\bibitem{shneiderman1992designing}
+B.~Shneiderman.
+\newblock {\em Designing the user interface: strategies for effective
+  human-computer interaction}, volume~2.
+\newblock Addison-Wesley Reading, MA, 1992.
+
+\bibitem{siposreview}
+R.~Sipos, A.~Ghosh, and T.~Joachims.
+\newblock Was this review helpful to you? it depends! context and voting
+  patterns in online content.
+
 \bibitem{wood2000attitude}
 W.~Wood.
 \newblock Attitude change: Persuasion and social influence.
 \newblock {\em Annual review of psychology}, 51(1):539--570, 2000.
+
+\bibitem{zhu2012switch}
+H.~Zhu, B.~Huberman, and Y.~Luon.
+\newblock To switch or not to switch: understanding social influence in online
+  choices.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 2257--2266. ACM, 2012.
 
 \end{thebibliography}
