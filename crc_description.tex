@@ -1,17 +1,7 @@
 \section{The California Report Card}
 \subsection{System Description}
 The California Report Card (CRC) is a web application that allows participants to advise the state government on timely policy issues.
-The CRC is divided into two phases: assessment and deliberation.
-In the assessment phase, participants grade the state's policies on a scale from A+ to F on six issues with a slider.
-Participants have the option to skip any issue.	
-After a participant's first response, the median grade for all participants is revealed. 
-The slider, is however, still active and participants have the option to change their grades.
-This process is illustrated in Figure \ref{grading-1}.
-In the deliberation phase, participants submit textual suggestions on future issues to include in the report card.
-In this work, we focus on the assesment phase and defer an analysis of biases in the deliberation phase to future work.
-
-\subsubsection{The Six Issues}
-The six issues were:
+When participants arrive at the application, they ``grade" the state on following six issues:
 \begin{itemize}
 \item Implementation of the Affordable Care Act ("Obamacare")
 \item Quality of K-12 public education
@@ -20,23 +10,33 @@ The six issues were:
 \item Laws and regulations regarding recreational marijuana
 \item Marriage rights for same-sex partners
 \end{itemize}
-These issues were posed in a constant sequential order with the same input scale (A+ to F).
-The issues were chosen to be timely and relevant to a majority of Californians.
+Grades were assigned on a thirteen point scale (A+,A,A-,...,D-,F).
+These issues were posed in a fixed sequential order each with the same input scale.
+Particpants submitted grades using a click-and-drag slider interface as illustrated in Figure \ref{grading-1}.
+On mobile devices this slider required the participants to touch and drag their finger to the desired grade.
 
-\subsection{Dataset and Experimental Setup}
-For each of the six issues, the report card collected around 1700 distinct inputs (both grades and skips). 
-Grades were recorded every time the slider was released.
-The slider for the grades was discretized into 13 parts (A+, A, A-,...).
+Upon release of the slider, the CRC reveals the median grade for that issue over all prior participants.
+Even after the median grade is revealed the slider is still active and participants can change their grades.
+However, it is important to note that participants were not explicitly told that they could change their grades.
+Another important observation is that participants who accessed the application at different times may have seen different median grades as they were calculated based on the data upto that point.
+We recorded the initial grade, the median that the participant observed, and any subsequent changes along with timestamps for each of the events. 
+Grading all of the six issues was not manditory and participants had the option to skip any of the issues.
 
-For analysis, we mapped these 13 grades onto a scale from 0 to 1, with 1 being an A+ and 0 being an F.
-For each participant $p_j$, we associate a 3-tuple of grades ($g_i[j]$, $m[j]$, $g_f[j]$) which reprsent the initial grade, median observed by the participant, and the final grade.
-To control for random changes or artifacts of the input device (eg. the slider stops), we counted changes
-that spanned a minimum time threshold of 3 seconds.
-With this definition, between 10\% and 20\% of the final grades involved at least one grade change.
-A detailed breakdown for each issue is illustrated in Figure \ref{grading-2}.
+The CRC has an additional open-ended discussion phase where participants submit textual suggestions on future issues to include in the report card.
+In this work, we focus on the first phase and defer an analysis of biases in the discussion phase to future work.
 
-We further conducted a reference survey through Survey Monkey asking the same questions (including the option to skip) without the median grade feedback. 
-The reference survey had a sample size of 611 participants.
+\subsection{Notation}
+To analyze this data, we mapped these 13 grades onto a scale from 0 to 1, with 1 being an A+ and 0 being an F.
+Let $P$ denote the set of all participants.
+For each participant $p_j\in P$, we associate a 3-tuple of grades ($g_i[j]$, $m[j]$, $g_f[j]$) which reprsent the initial grade, median observed by the participant, and the final grade.
+For each issue, we divided the participants into three subsets of $P$: ones who did not change their grades $P_n$, ones who changed $P_c$, and ones who skipped the question $P_s$.
+Our primary objective is to test the distributional properties of rating tuples from participants in $P_n$ compared to those in $P_c$.
+
+To ensure that all participants in the set $P_c$ had an opportunity to see the median grade and then react, we filtered this group using the timestamps. 
+The median grade appears in the interface with an animation whose completion time varied between devices, so we set a grace period of 3 seconds before 
+we categorized the participant into set $P_c$.  
+
+For consistency, we use the same notation to describe participants in the reference survey. We denote the set of reference survey participants as set $R$, and each participant is associated with a 3-tuple ($g_i[j]$, $m[j]$, $g_f[j]$). However, since the reference survey does not reveal the aggregate statistics $g_i[j] = g_f[j]$  and $m[j]$ is the median of the prior participants (which is not shown).
 
 \begin{figure}[h!]
   \centering

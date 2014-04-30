@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 APR 2014 11:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  30 APR 2014 01:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -299,18 +299,15 @@ Overfull \hbox (1.01465pt too wide) in paragraph at lines 16--20
 s-
  []
 
-
-Underfull \vbox (badness 6001) has occurred while \output is active []
-
- [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <../plots/grading-desc-1.png>]) (./related_work.tex) (./crc_description.tex
-Overfull \hbox (14.3721pt too wide) in paragraph at lines 16--17
+Overfull \hbox (14.3721pt too wide) in paragraph at lines 6--7
 []\T1/aer/m/n/9 Implementation of the Af-ford-able Care Act ("Oba-macare") 
  []
 
-[2] <../plots/grading-behavior-1.png, id=19, 583.4598pt x 354.123pt>
+[2] <../plots/grading-behavior-1.png, id=18, 583.4598pt x 354.123pt>
 File: ../plots/grading-behavior-1.png Graphic file (type png)
 
 <use ../plots/grading-behavior-1.png>
@@ -318,43 +315,28 @@ Package pdftex.def Info: ../plots/grading-behavior-1.png used on input line 43.
 
 (pdftex.def)             Requested size: 240.0pt x 145.66145pt.
 ) (./significance_model.tex
-
-LaTeX Warning: Citation `???' on page \thepage  undefined on input line 5.
-
-
-LaTeX Warning: Citation `???' on page \thepage  undefined on input line 14.
+Overfull \hbox (1.87932pt too wide) in paragraph at lines 1--1
+[]\secfnt SOCIAL HERD-ING TO-WARDS THE ME-
+ []
 
 
-LaTeX Warning: Citation `???' on page \thepage  undefined on input line 18.
+LaTeX Warning: Citation `markowski1990conditions' on page \thepage  undefined o
+n input line 5.
 
 
-LaTeX Warning: Citation `???' on page \thepage  undefined on input line 18.
-
-Package epstopdf Info: Source file: <../plots/absolute-deviations.eps>
-(epstopdf)                    date: 2014-04-21 10:24:29
-(epstopdf)                    size: 9271 bytes
-(epstopdf)             Output file: <../plots/absolute-deviations-eps-converted
--to.pdf>
-(epstopdf)                    date: 2014-04-21 10:30:25
-(epstopdf)                    size: 5472 bytes
-(epstopdf)             Command: <epstopdf --outfile=../plots/absolute-deviation
-s-eps-converted-to.pdf ../plots/absolute-deviations.eps>
-(epstopdf)             \includegraphics on input line 56.
-Package epstopdf Info: Output file is already uptodate.
-
-<../plots/absolute-deviations-eps-converted-to.pdf, id=20, 495.8525pt x 414.548
-75pt>
-File: ../plots/absolute-deviations-eps-converted-to.pdf Graphic file (type pdf)
-
- <use ../plots/absolute-deviations-eps-converted-to.pdf>
-Package pdftex.def Info: ../plots/absolute-deviations-eps-converted-to.pdf used
- on input line 56.
-(pdftex.def)             Requested size: 198.33748pt x 165.81656pt.
+Overfull \hbox (9.02324pt too wide) in paragraph at lines 20--23
+[]\T1/aer/m/n/9 To ad-dress these three chal-lenges, we pro-pose a non-parametr
+ic
+ []
 
 
-LaTeX Warning: Citation `???' on page \thepage  undefined on input line 61.
+Overfull \hbox (9.13826pt too wide) in paragraph at lines 43--46
+\T1/aer/m/n/9 the same size as $\OML/cmm/m/it/9 X[]$\T1/aer/m/n/9 . Un-der this
+ null hy-poth-e-sis $\OML/cmm/m/it/9 median\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 X[]\
+OT1/cmr/m/n/9 ) =
+ []
 
-) (./path_model.tex [3 <../plots/grading-behavior-1.png>]
+[3 <../plots/grading-behavior-1.png>]) (./path_model.tex
 
 LaTeX Warning: Citation `???' on page \thepage  undefined on input line 5.
 
@@ -367,28 +349,25 @@ Overfull \hbox (9.81201pt too wide) in paragraph at lines 1--1
  []
 
 
-LaTeX Warning: Citation `???' on page \thepage  undefined on input line 10.
+LaTeX Warning: Citation `???' on page \thepage  undefined on input line 11.
 
 
-Overfull \hbox (12.751pt too wide) in paragraph at lines 13--16
+Overfull \hbox (12.751pt too wide) in paragraph at lines 14--17
 []\T1/aer/m/n/9 Similar to the pre-vi-ous sec-tion where we ap-plied non-parame
 tric
  []
 
+[4]
 
-Underfull \vbox (badness 3428) has occurred while \output is active []
-
- [4 <../plots/absolute-deviations-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation `???' on page \thepage  undefined on input line 23.
+LaTeX Warning: Citation `???' on page \thepage  undefined on input line 24.
 
 
-Overfull \hbox (7.0636pt too wide) in paragraph at lines 33--38
+Overfull \hbox (7.0636pt too wide) in paragraph at lines 34--39
 \T1/aer/m/n/9 We can fur-ther es-ti-mate how much more con-cen-trated changed
  []
 
 
-LaTeX Warning: Citation `???' on page \thepage  undefined on input line 39.
+LaTeX Warning: Citation `???' on page \thepage  undefined on input line 40.
 
 ) (./results.tex
 Package epstopdf Info: Source file: <../plots/bias-1.eps>
@@ -402,7 +381,7 @@ ed-to.pdf ../plots/bias-1.eps>
 (epstopdf)             \includegraphics on input line 6.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/bias-1-eps-converted-to.pdf, id=39, 1444.39626pt x 619.31375pt>
+<../plots/bias-1-eps-converted-to.pdf, id=32, 1444.39626pt x 619.31375pt>
 File: ../plots/bias-1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../plots/bias-1-eps-converted-to.pdf>
@@ -426,7 +405,7 @@ ps-converted-to.pdf ../plots/abs-deviations-1.eps>
 (epstopdf)             \includegraphics on input line 38.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/abs-deviations-1-eps-converted-to.pdf, id=40, 888.31876pt x 603.25375
+<../plots/abs-deviations-1-eps-converted-to.pdf, id=33, 888.31876pt x 603.25375
 pt>
 File: ../plots/abs-deviations-1-eps-converted-to.pdf Graphic file (type pdf)
  <use ../plots/abs-deviations-1-eps-converted-to.pdf>
@@ -449,7 +428,7 @@ s-converted-to.pdf ../plots/path-dependence.eps>
 (epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/path-dependence-eps-converted-to.pdf, id=41, 824.07875pt x 583.17876p
+<../plots/path-dependence-eps-converted-to.pdf, id=34, 824.07875pt x 583.17876p
 t>
 File: ../plots/path-dependence-eps-converted-to.pdf Graphic file (type pdf)
  <use ../plots/path-dependence-eps-converted-to.pdf>
@@ -473,7 +452,7 @@ ps-converted-to.pdf ../plots/BIC-optimization.eps>
 (epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/BIC-optimization-eps-converted-to.pdf, id=51, 1439.3775pt x 696.6025p
+<../plots/BIC-optimization-eps-converted-to.pdf, id=44, 1439.3775pt x 696.6025p
 t>
 File: ../plots/BIC-optimization-eps-converted-to.pdf Graphic file (type pdf)
  <use ../plots/BIC-optimization-eps-converted-to.pdf>
@@ -492,7 +471,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/BIC-optimization-2-eps-converted-to.pdf, id=52, 1439.3775pt x 733.741
+<../plots/BIC-optimization-2-eps-converted-to.pdf, id=45, 1439.3775pt x 733.741
 26pt>
 File: ../plots/BIC-optimization-2-eps-converted-to.pdf Graphic file (type pdf)
  <use ../plots/BIC-optimization-2-eps-converted-to.pdf>
@@ -517,7 +496,7 @@ pdf>
 s-converted-to.pdf ../plots/shift-parameter.eps>
 (epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
-<../plots/shift-parameter-eps-converted-to.pdf, id=53, 620.3175pt x 433.62pt>
+<../plots/shift-parameter-eps-converted-to.pdf, id=46, 620.3175pt x 433.62pt>
 File: ../plots/shift-parameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../plots/shift-parameter-eps-converted-to.pdf>
@@ -533,11 +512,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2885 strings out of 493315
- 38061 string characters out of 6137904
- 102127 words of memory out of 5000000
- 6233 multiletter control sequences out of 15000+600000
- 52161 words of font info for 67 fonts, out of 8000000 for 9000
+ 2881 strings out of 493315
+ 37852 string characters out of 6137904
+ 102135 words of memory out of 5000000
+ 6231 multiletter control sequences out of 15000+600000
+ 51025 words of font info for 66 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,8n,28p,452b,232s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -553,12 +532,11 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2013/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (8 pages, 492205 bytes).
+st/fonts/type1/urw/times/utmb8a.pfb>
+Output written on sigproc-sp.pdf (8 pages, 481366 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 127 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
