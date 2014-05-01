@@ -62,6 +62,21 @@ or for initial vs. final ratings in the change group $X_c'$:
 X_c' = \{|m[j] - g_i[j]|\}\text{ }\forall j \in P_c
 \end{equation}
 
+\subsection{Quantifying Concentration of Grades}
+In addition to testing the hypothesis, we can also quantify the effects of social herding. 
+We tested the significance of the absolute deviations using a Wilcoxon test statistic.
+The Wilcoxon statistic can be inverted to estimate a most likely \emph{shift parameter}, that a constant shift $\Delta$ in the distribution of absolute deviations $X_c$ that maximally aligns them with $X_n$ (ie. $X_c + \Delta$ is most supported by the null hypothesis). 
+Since $X_c$ is a set of absoulte deviations, $\Delta$ tells us how much more concentrated $X_c$ is than $X_n$ around the observed medians.
+This parameter is relevant to the design of recommendation algorithms use proximity (eg. clustering or nearest neighbors).
+
+We refer to \cite{lehmann2006nonparametrics} on the derivation of $\Delta$ and its confidence interval:
+\begin{equation}
+D = \{x_n[j] - x_c[i]\} \text{ } \forall i,j \in X_n, X_c
+\end{equation}
+\begin{equation}
+\Delta = median(D)
+\end{equation}
+
 %\subsection{Discussion About the Grade Distribution}
 %In Figure \ref{dist-1}, we show the distribution of absolute deviations for the Marriage Rights issue. 
 %\begin{figure}[ht!]

@@ -1,17 +1,20 @@
-\section{Parameter Estimation For Grade Change Model}
+\section{Predicting Magnitude of Grade Changes}
 \label{changemod}
-In the previous sections, we proposed a technique to test the significance of the regression towards the median.
+In the previous two sections, we proposed a technique to test the significance of the social herding hypothesis.
 In this section, we build a model to describe the relationship between the variables in the 3-tuple ($g_i[j]$, $m[j]$, $g_f[j]$).
-We also contrasted two different parameters of interest: correlation and absolute deviation.
-In this section, we will further build on this to estimate two quantities: a functional relationship between $m[j] - g_i[j]$ and $g_f[j] - g_i[j]$, and a quantification of how much more concentrated the changed grades are $\Delta$.
-The functional relationship, related to the correlation, will tell us how to predict a final grade given an observed median.
-The $\Delta$ parameter will tell us how much more tightly grouped around the median the final grades are.
+In other words, given a participant's current grade, the median they observed, can we predict the final grade.
 
-\subsection{Modeling Heterogenous Changes}
-Previous work, suggests that Social Influence bias is not homogenous; that is a negative influence is different in magnitude than a positive influence \cite{???}.
-This means that we cannot assume that the relationship between $m[j] - g_i[j]$ and $g_f[j] - g_i[j]$ is linear.
+\subsection{Modeling Changes}
+Previous work, suggests that social herding is not a homogenous effect, namely, positive influences are different from negative influences.
+In Muchnik et al. \cite{muchnik2013social}, they found that when they positively treated posts with higher up-vote counts in Reddit it lead to a significant increase in the likelihood of additional up votes (32\% more likely). 
+On the other hand, they argue negative treatments inspired correction behavior; where some participants wanted to correct what they felt was an incorrect score. 
+They found that this also increased the likelihood of up-voting (88\% more likely).
 
-Similar to the previous section where we applied non-parametric tests, we propose a information theoretic model search that allows flexible parameter selection without making strong assumptions about the nature of the relationship.
+These results suggest that the effects of social herding can be non-linear and are very context/question dependent.
+Similar to the previous section where we applied non-parametric tests that did not make a strong assumption about the distribution of the data, we propose a information theoretic model search that allows flexible parameter selection without making strong assumptions about the nature of the relationship.
+Conditioned on the event that the participant changes their grade, we learn a functional relationship between the observed median and initial grade that can be a polynomial of any degree.
+While the space of all polynomial models is fairly exhaustive, we acknowledge that this model can only fit curves that are continous and smooth.
+
 Let $f\in \mathcal{P}^k$ be a polynomial of degree $k$.
 The square loss of $f$, is the error in predicting $g_f[j] - g_i[j]$ from $f(m[j] - g_i[j])$:
 \begin{equation}
@@ -21,30 +24,18 @@ For a given $k$, the best-fit polynomial minimizes this square-loss:
 \begin{equation}
 f^*_k =\arg \min_f \mathcal{L}(X_c;f,k)
 \end{equation}
-To search over the space of polynomial models, we apply a well-studied technique called the Bayesian Information Criterion (BIC) \cite{???}.
+For a given $k$, this problem can be solved with least squares.
+To search over the space of polynomial models, we apply a well-studied technique called the Bayesian Information Criterion (BIC) \cite{schwarz1978estimating,burnham2002model}.
+This technique converts the optimization problem into a penalized problem that jointly optimizes over the ``complexity parameter" k.
 This penalty can be interpreted as bias towards lower degree models, in other words, an Occam's Razor prior belief. 
-This we reformulate the optimization problem in the following way to incorporate the BIC:
+Cross-validation is an alternate method to empirically determine optimal model, and in practice, they give very similar results.
+BIC, however, is derived through maximum likelihood estimate and is not an empirical so the learned model has a notion of optimality conditioned on the BIC prior belief.
+
+Thus, we reformulate the optimization problem in the following way to incorporate the BIC penalty:
 \begin{equation}
 \arg \min_{f,k} |X_c|\log(\mathcal{L}(X_c;f,k)) + k\log(|X_c|)
 \end{equation}
 The resulting optimal polynomal will tell how the regression affects varies as a function of $m[j] - g_i[j]$ while controlling for over-fitting to our data.
-This optimization problem is non-convex so we incrementally try polynomials of degree 1,2,3.. etc. until we reach a local minimum.
-
-\subsection{Concentration of Grades}
-We can further estimate how much more concentrated changed grades are around the observed median.
-Recall in Section \ref{ht}, we tested the significance of the absolute deviations using a Wilcoxon test statistic.
-The Wilcoxon statistic can be inverted to estimate a most likely \emph{shift parameter}, that a constant shift $\Delta$ in the distribution of absolute deviations $X_c$ that maximally aligns them with $X_n$ (ie. $X_c + \Delta$ is most supported by the null hypothesis). 
-Since $X_c$ is a set of absoulte deviations, $\Delta$ tells us how much more concentrated $X_c$ is than $X_n$ around the observed medians.
-This parameter is relevant to the design of recommendation algorithms use proximity (eg. clustering or nearest neighbors).
-
-We refer to \cite{???} on the derivation of $\Delta$ and its confidence interval:
-\begin{equation}
-D = \{x_n[j] - x_c[i]\} \text{ } \forall i,j \in X_n, X_c
-\end{equation}
-\begin{equation}
-\Delta = median(D)
-\end{equation}
-
-
+In general, this optimization problem is non-convex so we incrementally try polynomials of degree 1,2,3.. etc. until we reach a local minimum.
 
 
