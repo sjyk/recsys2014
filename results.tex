@@ -54,13 +54,13 @@ A difference of a + or - is represented as $\frac{1}{3}$ eg. B to B+ or B+ to A-
 
 \subsection{Social Herding Towards the Median}
 Using the non-parametric test proposed in Section \ref{ht}, we tested the hypothesis of whether grade changes led to significantly more concentration around the median grade.
-In our first experiment (Figure \ref{mdev-1}), we tested the absolute deviations of only the CRC users.
-We compared the group of users that did not change their grades to the group that changed their grades.
+In our first experiment (Figure \ref{mdev-1}), we tested the absolute deviations of only the CRC participants.
+We compared the group of participants that did not change their grades to the group that changed their grades.
 We found that while there were no statistically significant differences between the initial grades of the two groups, the final grades of the group that changed were statistically significantly more concentrated than both their own initial grades and the grades of the no change group.
 \begin{figure}[h]
   \centering
     \includegraphics[scale=0.25]{../plots/abs-deviations-1.eps}
-      \caption{For those users that changed their grades, final grades were significantly more concentrated around the median grade than their initial grades. In addition, these grades are more concentrated than the grades for those who didn't change.}
+      \caption{For those participants that changed their grades, final grades were significantly more concentrated around the median grade than their initial grades. In addition, these grades are more concentrated than the grades for those who didn't change.}
       \label{mdev-1}
 \end{figure}
 
@@ -89,7 +89,7 @@ When participants change their grades, they are more likely to concentrate aroun
 What is particularly surprising is that the two groups of participants $P_n$ and $P_c$ are very similar in terms of intial grades, and the data suggests that herding is not correlated with more or less concentrated initial grades.
 
 In our second experiment (Figure \ref{mdev-2}), we apply the same testing procedure to compare the grades from the CRC to to those in the reference survey.
-We absolute deviations of the group of users who changed their grades in the CRC against users from the reference survey.
+We absolute deviations of the group of participants who changed their grades in the CRC against participants from the reference survey.
 \begin{figure}[h]
   \centering
     \includegraphics[scale=0.35]{../plots/bias-2.eps}
@@ -120,7 +120,7 @@ We not only found that participants' changed grades were statistically significa
 While correlation does not imply causation, we argue that this evidence is most consistent with the social herding hypothesis.
 As the CRC was not a randomized survey, there are possibly confounding covariates eg. participants who changed their grades were more likely to leave tightly concentrated grades in the first place.
 However, our comparision with the reference survey, and discovery that initial grades were largely consistent with the reference survey and with those that didn't change their grades, suggest that these confounding covariates are not very significant.
-These results are encouraging and we hope to run a randomized user study to confirm the causal relationship between revealing the median and concentrated grades.
+These results are encouraging and we hope to run a randomized participant study to confirm the causal relationship between revealing the median and concentrated grades.
 
 \begin{figure}[ht!]
   \centering
@@ -147,63 +147,46 @@ Such a model is often used as a baseline for comparision in recommender systems.
 What we may interpret as low prediction error may in fact be the effects of social herding around the median, and if we were to apply this model asking the same questions but in a system without the herding effects; we may find that the same model performs poorly.
 A median prediction is a naive model, but this problem affects many recommendation algorithms since they often rely on proximity metrics such as clustering, k-nearest neighbors, and some kernel machine learning methods.
 
-\subsection{Sequence Dependence}
+\subsection{Order Dependence and Social Herding}
 Using the model proposed in Section \ref{path}, we calculated the test statistics for both the CRC and the Reference Survey.
-We found that for all issues the statistic was higher for the CRC suggesting an effect corroborating results in other work such as \cite{???}.
-However, none of the results passed a $p < 0.05$ statistical significance test.
-\begin{figure}[h!]
+Recall, that this model calculate the change in disagreement with the median; that is, how much did a participant disagree with the median on past responses compared 
+to the current value.
+A comparatively larger value in the CRC suggests repeated feedback of the median grade encourages future responses to be more moderate.
+Figure \ref{path-1} illustrates the results of the experiment for the five last issues (K12, College, Immigration, Marijuana, Marriage Rights), and using the mean disagreement on the previous issues.
+The experimental results were not as significant as the other experiments and we found that only two issues Immigration (p=0.0037) and Marijuana (p=0.0287) showed an order dependence that was significantly greater than the reference survey.
+For the other issues it is not clear if and how order plays a role in the social herding bias.
+
+\begin{figure}[h]
   \centering
-    \includegraphics[width=\columnwidth]{../plots/path-dependence.eps}
-      \caption{\textbf{TODO}}
+    \includegraphics[scale=0.30]{../plots/path-dependence.eps}
+      \caption{We measure the mean change in disagreement for each issue. The change in disagreement is defined as the average deviation with median on previous issues minus the deviation with the median on the current issue. We hypothesized that the CRC would have comparatively greater (or less negative) values than the reference survey.}
       \label{path-1}
 \end{figure}
-We believe that these results suggest that there is some sequence dependence in the CRC, however, we cannot definitively conclude that from the current quantity of data.
 
-\subsection{Grade Change Model}
-In Figure \ref{opt-1} and Figure \ref{opt-2}, we show the results of our model search and locally optimal model for each issue.
-We found for four out of the six issues, K12, College, Immigration, and Marijuana, the model we found was linear.
-However, for Obamacare and Marriage Rights, we found that the relationship was quadratic.
+In summary, we were not able to reject the null hypothesis for order dependence, but we did find some indication with two statistically significant results that it plays an important role.
+This underscores the subtlty social herding and social influence bias as they are very question and context dependent.
 
-\begin{figure*}[h!]
-  \centering
-    \includegraphics[scale=0.25]{../plots/BIC-optimization.eps}
-      \caption{\textbf{TODO}}
+\begin{figure*}[ht!]
+\hspace{-10em}
+    \includegraphics[scale=0.40]{../plots/BIC-optimization.eps}
+      \caption{For the participants that changed their grades, we plot the difference between their grade and the median (X-axis), and their changed grade (Y-axis). We overlay the optimal polynomial model to represent the relationship $f(x) = y$. Below each plot, is the BIC objective function showing how we picked an optimal degree of polynomial.}
       \label{opt-1}
 \end{figure*}
 
-\begin{figure*}[h!]
-  \centering
-    \includegraphics[scale=0.25]{../plots/BIC-optimization-2.eps}
-      \caption{\textbf{TODO}}
-      \label{opt-2}
-\end{figure*}
+\subsection{Predicting Grade Changes}
+We train the polynomial model proposed in Section \ref{changemod}, and the results are shown in Figure \ref{opt-1}.
+Our model search and optimization through the BIC discovered that for four out of the six issues, K12, College, Immigration, and Marijuana, the model was linear.
+This suggests homogeneity in positive and negative social influence effects for these issues.
+However, for Obamacare and Marriage Rights, we found that the relationship was quadratic.
+Interestingly enough, over the domain of changes, the learned quadratic was ``almost" linear, however it modeled heterogeneity in positive and negative influence effects.
+Participants who initially graded the state higher than the median had a more significant tendency to change downwards, in comparision to the upward tendency of those who graded less than the median.
 
-Figure \ref{opt-2} illustrates the nature of the quadratic relationship, and we see heterogeneity between a positive regression towards the median and a negative regression.
-Participants who initially graded the state higher than the median had a more significant tendency to regress downwards.
-This result is interesting for a few reasons: (1) contrary to our initial expectations the relationship is largely linear and (2) non-linearities appear in the two issues that received the highest grades which also happen to be highly politicized issues.
-There are many possible explanations for this including non-response bias \cite{???} or aversive response \cite{???}; and we defer a more detailed analysis to future work.
+These models further illustrate the subtlty of social influence bias. 
+In Muchnik et al. they observed a biasing tendency where both positive and negative influence led to increased upward bias (due to herding and correcting tendencies respectively).
+Compared to those results, our results are quite different as we observe just herding for both positive and negative influences.
+One possible explanation is that since our mechanism for social influence is revealing the true grade, not modifying the grade (thus showing an ``incorrect" value), the correcting tendency is not significant.
 
-\subsection{Comparision To Reference Survey}
-We applied our proposed non-parametric test to compare the absolute deviations in the group of participants who changed their grades in the CRC with results from a reference survey.
-For the reference survey, we calculated the absolute deviation around the median (which the participants were not shown).
-We found for all but one issue the grades from the CRC were statistically significantly closer to the median than ones from the reference survey.
 
-\begin{tabular}[!ht] { r | l | l | r}
-\label{ref-1}
-  Issue & Med(Ref) & Med(CRC) & p-val \\
-  \hline
-  \hline
-  Obamacare &  B & B & 0.0078\\
-  \hline
-  K12 & C+ & C & 0.3563\\
-  \hline
-  College & C- & C- & 0.0011\\
-  \hline
-  Immigration & C & C+ & 0.0277\\
-  \hline
-  Marijuana & C & C & 0.0076\\
-  \hline
-  Marriage Rights & B+ & B+ & 0.0494 \\
-\end{tabular}
 
-Furthermore, the two surveys aligned nearly perfectly in aggregate.
+
+
