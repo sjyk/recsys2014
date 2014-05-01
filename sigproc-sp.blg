@@ -3,49 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: sigproc-sp.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
-Warning--I didn't find a database entry for "???"
 Warning--empty journal in bikhchandani2000herd
 Warning--empty journal in siposreview
 Warning--empty year in siposreview
-You've used 22 entries,
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            636 strings with 7480 characters,
-and the built_in function-call counts, 7472 in all, are:
-= -- 755
-> -- 314
+            661 strings with 8152 characters,
+and the built_in function-call counts, 8721 in all, are:
+= -- 882
+> -- 366
 < -- 6
-+ -- 125
-- -- 102
-* -- 504
-:= -- 1222
-add.period$ -- 68
-call.type$ -- 22
-change.case$ -- 113
++ -- 146
+- -- 118
+* -- 593
+:= -- 1431
+add.period$ -- 80
+call.type$ -- 26
+change.case$ -- 131
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 297
-empty$ -- 594
-format.name$ -- 102
-if$ -- 1576
+cite$ -- 29
+duplicate$ -- 342
+empty$ -- 697
+format.name$ -- 118
+if$ -- 1833
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 26
-newline$ -- 112
-num.names$ -- 44
-pop$ -- 127
+int.to.str$ -- 26
+missing$ -- 31
+newline$ -- 132
+num.names$ -- 52
+pop$ -- 144
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 110
 quote$ -- 0
-skip$ -- 212
+skip$ -- 244
 stack$ -- 0
-substring$ -- 511
-swap$ -- 69
+substring$ -- 607
+swap$ -- 73
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 94
 warning$ -- 3
-while$ -- 78
-width$ -- 24
-write$ -- 237
-(There were 4 warnings)
+while$ -- 92
+width$ -- 28
+write$ -- 280
+(There were 3 warnings)

@@ -1,9 +1,8 @@
 \section{Results}
 We evaluated our models on data collected from the California Report Card between January 18th to April 20th.
 We adminstered our reference survey through SurveyMonkey between March 8th and March 14th.
-We consider a set of 1575 total participants from the CRC and a sample of 611 SurveyMonkey participants whose grading activity was as follows:
-
-\begin{tabular}[!ht] { l | r | r | r | l }
+We consider a set of 1575 total participants from the CRC and a sample of 611 SurveyMonkey participants whose grading activity was as follows:\\[1\baselineskip]
+\begin{tabular}[!ht]{ l | r | r | r | l }
 Issue & No Change & Change & Skip & Median \\
 \hline
 \hline
@@ -35,13 +34,13 @@ Issue & No Change & Change & Skip & Median \\
   Marijuana & 498 & - & 113 & C \\
   \hline
   Marriage Rights & 554 & - & 57 & B+
-\end{tabular}
+\end{tabular}\\[1\baselineskip]
 
 For any given issue, between 10\% and 20\% of those who assigned grades registered a grade change.
 In all, 556 out of the 1575 CRC participants changed their grades at least once (Figure \ref{change-1}).
-\begin{figure}[h]
+\begin{figure}[hb]
   \centering
-    \includegraphics[scale=.40]{../plots/change-1.eps}
+    \includegraphics[scale=.35]{../plots/change-1.eps}
       \caption{The majority of participants did not change grades. 35\% of participants changed their grade on at least one issue, the majority of which (62\%) changed only a single issue. Less than 5\% of participants changed their grades on more than 4 out of the 6 issues.}
       \label{change-1}
 \end{figure}
@@ -82,7 +81,7 @@ For the set of participants who changed their grades $P_c$ and those who did not
   Marijuana & 2.7549e-10 & 4.2560e-05\\
   \hline
   Marriage Rights & 3.5946e-06 & 2.4644e-10 \\
-\end{tabular}
+\end{tabular}\\[1\baselineskip]
 
 These results are consistent with the social herding hypothesis.
 When participants change their grades, they are more likely to concentrate around the median.
@@ -113,7 +112,7 @@ We absolute deviations of the group of participants who changed their grades in 
   Marijuana & 0.7288 & 9.3111e-06\\
   \hline
   Marriage Rights & 0.2478 & 0.0161 \\
-\end{tabular}
+\end{tabular}\\[1\baselineskip]
 
 The results of our two experiments suggest that the CRC rating data is affected by social herding.
 We not only found that participants' changed grades were statistically significantly more likely to concentrate around the median, they were also more likely in comparision to the reference survey.
@@ -124,7 +123,7 @@ These results are encouraging and we hope to run a randomized participant study 
 
 \begin{figure}[ht!]
   \centering
-    \includegraphics[scale=0.30]{../plots/shift-parameter.eps}
+    \includegraphics[scale=0.28]{../plots/shift-parameter.eps}
       \caption{We calculate the parameter $\Delta$ which is the most likely amount that our observations deviate from the null hypothesis. This can be interpreted as how much more are grades in our change group concentrated around the median.}
       \label{shift-1}
 \end{figure}
@@ -155,20 +154,18 @@ A comparatively larger value in the CRC suggests repeated feedback of the median
 Figure \ref{path-1} illustrates the results of the experiment for the five last issues (K12, College, Immigration, Marijuana, Marriage Rights), and using the mean disagreement on the previous issues.
 The experimental results were not as significant as the other experiments and we found that only two issues Immigration (p=0.0037) and Marijuana (p=0.0287) showed an order dependence that was significantly greater than the reference survey.
 For the other issues it is not clear if and how order plays a role in the social herding bias.
-
 \begin{figure}[h]
   \centering
     \includegraphics[scale=0.30]{../plots/path-dependence.eps}
       \caption{We measure the mean change in disagreement for each issue. The change in disagreement is defined as the average deviation with median on previous issues minus the deviation with the median on the current issue. We hypothesized that the CRC would have comparatively greater (or less negative) values than the reference survey.}
       \label{path-1}
 \end{figure}
-
 In summary, we were not able to reject the null hypothesis for order dependence, but we did find some indication with two statistically significant results that it plays an important role.
 This underscores the subtlty social herding and social influence bias as they are very question and context dependent.
 
 \begin{figure*}[ht!]
-\hspace{-10em}
-    \includegraphics[scale=0.40]{../plots/BIC-optimization.eps}
+\hspace{-7em}
+    \includegraphics[scale=0.36]{../plots/BIC-optimization.eps}
       \caption{For the participants that changed their grades, we plot the difference between their grade and the median (X-axis), and their changed grade (Y-axis). We overlay the optimal polynomial model to represent the relationship $f(x) = y$. Below each plot, is the BIC objective function showing how we picked an optimal degree of polynomial.}
       \label{opt-1}
 \end{figure*}

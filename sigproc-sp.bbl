@@ -33,6 +33,12 @@ R.~Bond and P.~B. Smith.
   (1952b, 1956) line judgment task.
 \newblock {\em Psychological bulletin}, 119(1):111, 1996.
 
+\bibitem{burnham2002model}
+K.~P. Burnham and D.~R. Anderson.
+\newblock {\em Model selection and multimodel inference: a practical
+  information-theoretic approach}.
+\newblock Springer, 2002.
+
 \bibitem{burnkrant1975informational}
 R.~E. Burnkrant and A.~Cousineau.
 \newblock Informational and normative social influence in buyer behavior.
@@ -68,6 +74,12 @@ J.-H. Huang and Y.-F. Chen.
 \newblock Herding in online product choice.
 \newblock {\em Psychology \& Marketing}, 23(5):413--428, 2006.
 
+\bibitem{krosnick1987evaluation}
+J.~A. Krosnick and D.~F. Alwin.
+\newblock An evaluation of a cognitive theory of response-order effects in
+  survey measurement.
+\newblock {\em Public Opinion Quarterly}, 51(2):201--219, 1987.
+
 \bibitem{lehmann2006nonparametrics}
 E.~L. Lehmann and H.~J. D'Abrera.
 \newblock {\em Nonparametrics: statistical methods based on ranks}.
@@ -78,6 +90,11 @@ J.~Lorenz, H.~Rauhut, F.~Schweitzer, and D.~Helbing.
 \newblock How social influence can undermine the wisdom of crowd effect.
 \newblock {\em Proceedings of the National Academy of Sciences},
   108(22):9020--9025, 2011.
+
+\bibitem{markowski1990conditions}
+C.~A. Markowski and E.~P. Markowski.
+\newblock Conditions for the effectiveness of a preliminary test of variance.
+\newblock {\em The American Statistician}, 44(4):322--326, 1990.
 
 \bibitem{moscovici1972social}
 S.~Moscovici and C.~Faucheux.
@@ -101,6 +118,11 @@ K.~O'Hara.
   infosphere.
 \newblock In {\em Proceedings of the 3rd Annual ACM Web Science Conference},
   pages 223--232. ACM, 2012.
+
+\bibitem{schwarz1978estimating}
+G.~Schwarz et~al.
+\newblock Estimating the dimension of a model.
+\newblock {\em The annals of statistics}, 6(2):461--464, 1978.
 
 \bibitem{shneiderman1992designing}
 B.~Shneiderman.
