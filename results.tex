@@ -1,6 +1,6 @@
 \section{Results}
 We evaluated our models on data collected from the California Report Card between January 18th to April 20th.
-We adminstered our reference survey through SurveyMonkey between March 8th and March 14th.
+We administered our reference survey through SurveyMonkey between March 8th and March 14th.
 We consider a set of 1575 total participants from the CRC and a sample of 611 SurveyMonkey participants whose grading activity was as follows:\\[1\baselineskip]
 \begin{tabular}[!ht]{ l | r | r | r | l }
 Issue & No Change & Change & Skip & Median \\
@@ -85,10 +85,10 @@ For the set of participants who changed their grades $P_c$ and those who did not
 
 These results are consistent with the social herding hypothesis.
 When participants change their grades, they are more likely to concentrate around the median.
-What is particularly surprising is that the two groups of participants $P_n$ and $P_c$ are very similar in terms of intial grades, and the data suggests that herding is not correlated with more or less concentrated initial grades.
+What is particularly surprising is that the two groups of participants $P_n$ and $P_c$ are very similar in terms of initial grades, and the data suggests that herding is not correlated with more or less concentrated initial grades.
 
 In our second experiment (Figure \ref{mdev-2}), we apply the same testing procedure to compare the grades from the CRC to to those in the reference survey.
-We absolute deviations of the group of participants who changed their grades in the CRC against participants from the reference survey.
+We compare absolute deviations of the group of participants who changed their grades in the CRC against participants from the reference survey.
 \begin{figure}[h]
   \centering
     \includegraphics[scale=0.35]{../plots/bias-2.eps}
@@ -115,10 +115,10 @@ We absolute deviations of the group of participants who changed their grades in 
 \end{tabular}\\[1\baselineskip]
 
 The results of our two experiments suggest that the CRC rating data is affected by social herding.
-We not only found that participants' changed grades were statistically significantly more likely to concentrate around the median, they were also more likely in comparision to the reference survey.
+We not only found that participants' changed grades were statistically significantly more likely to concentrate around the median, they were also more likely in comparison to the reference survey.
 While correlation does not imply causation, we argue that this evidence is most consistent with the social herding hypothesis.
 As the CRC was not a randomized survey, there are possibly confounding covariates eg. participants who changed their grades were more likely to leave tightly concentrated grades in the first place.
-However, our comparision with the reference survey, and discovery that initial grades were largely consistent with the reference survey and with those that didn't change their grades, suggest that these confounding covariates are not very significant.
+However, our comparison with the reference survey, and discovery that initial grades were largely consistent with the reference survey and with those that didn't change their grades, suggest that these confounding covariates are not very significant.
 These results are encouraging and we hope to run a randomized participant study to confirm the causal relationship between revealing the median and concentrated grades.
 
 \begin{figure}[ht!]
@@ -139,16 +139,16 @@ For the other issues, the parameter was smaller indicating less of an effect of 
 The parameter was the smallest for the first issue (Obamacare), and we conjecture that for this issue many participants were still learning how to use the slider interface; leading to random grade changes.
 For this issue, we see that it had the most number of grade changes as well.
 
-This parameter is very relevant to the design both recommender systems and predictive models.
-Consider the problem of trying to predict a particpant's next grade.
+This parameter is very relevant to the design of both recommender systems and predictive models.
+Consider the problem of trying to predict a participant's next grade.
 The simplest model we could design is a model where we always select the median grade.
-Such a model is often used as a baseline for comparision in recommender systems.
+Such a model is often used as a baseline for comparison in recommender systems.
 What we may interpret as low prediction error may in fact be the effects of social herding around the median, and if we were to apply this model asking the same questions but in a system without the herding effects; we may find that the same model performs poorly.
 A median prediction is a naive model, but this problem affects many recommendation algorithms since they often rely on proximity metrics such as clustering, k-nearest neighbors, and some kernel machine learning methods.
 
 \subsection{Order Dependence and Social Herding}
 Using the model proposed in Section \ref{path}, we calculated the test statistics for both the CRC and the Reference Survey.
-Recall, that this model calculate the change in disagreement with the median; that is, how much did a participant disagree with the median on past responses compared 
+Recall, that this model calculates the change in disagreement with the median; that is, how much did a participant disagree with the median on past responses compared 
 to the current value.
 A comparatively larger value in the CRC suggests repeated feedback of the median grade encourages future responses to be more moderate.
 Figure \ref{path-1} illustrates the results of the experiment for the five last issues (K12, College, Immigration, Marijuana, Marriage Rights), and using the mean disagreement on the previous issues.
@@ -161,7 +161,7 @@ For the other issues it is not clear if and how order plays a role in the social
       \label{path-1}
 \end{figure}
 In summary, we were not able to reject the null hypothesis for order dependence, but we did find some indication with two statistically significant results that it plays an important role.
-This underscores the subtlty social herding and social influence bias as they are very question and context dependent.
+This underscores the subtlety social herding and social influence bias as they are very question and context dependent.
 
 \begin{figure*}[ht!]
 \hspace{-7em}
@@ -176,9 +176,9 @@ Our model search and optimization through the BIC discovered that for four out o
 This suggests homogeneity in positive and negative social influence effects for these issues.
 However, for Obamacare and Marriage Rights, we found that the relationship was quadratic.
 Interestingly enough, over the domain of changes, the learned quadratic was ``almost" linear, however it modeled heterogeneity in positive and negative influence effects.
-Participants who initially graded the state higher than the median had a more significant tendency to change downwards, in comparision to the upward tendency of those who graded less than the median.
+Participants who initially graded the state higher than the median had a more significant tendency to change downwards, in comparison to the upward tendency of those who graded less than the median.
 
-These models further illustrate the subtlty of social influence bias. 
+These models further illustrate the subtlety of social influence bias. 
 In Muchnik et al. they observed a biasing tendency where both positive and negative influence led to increased upward bias (due to herding and correcting tendencies respectively).
 Compared to those results, our results are quite different as we observe just herding for both positive and negative influences.
 One possible explanation is that since our mechanism for social influence is revealing the true grade, not modifying the grade (thus showing an ``incorrect" value), the correcting tendency is not significant.

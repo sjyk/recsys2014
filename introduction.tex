@@ -2,7 +2,7 @@
 User-assigned ratings are a key component of almost all recommender systems.
 Rating data, like traditional surveys, are subject to a variety of biasing tendencies \cite{groves2013survey}.
 We explore a class of biases, collectively called \emph{Social Influence Bias}, which arise from feedback from the actions of other participants in the system \cite{demarzo2003persuasion, moscovici1972social, wood2000attitude}.
-One aspect of Social Influence Bias is the phenomenon called \emph{Social Herding}, where the feedback from the community encourages future participants to conform to what they perceive as the ``norm" in the community. 
+One aspect of Social Influence Bias is the phenomenon called \emph{Social Herding}, where the feedback from the community encourages future participants to conform to what they perceive as the ``norm" in the community \cite{banerjee1992simple}. 
 \begin{figure}[t]
   \centering
     \includegraphics[scale=0.30]{../plots/intro.png}
@@ -21,7 +21,7 @@ In recent related work, Muchnik et al. \cite{muchnik2013social}, used a randomiz
 They randomly treated forum posts with extra up-votes and down-votes and measured the treatment effect; concluding that a statistically significant social herding tendency exists.
 We study a related effect using a new platform, the California Report Card (CRC), which reveals the median values to participants \emph{after} they assign their own ratings, and then allows them to modify their ratings.
 We test whether participants who have already submitted a rating will actually \emph{change} their existing ratings upon learning the median rating for the population and if there is a tendency to ``herd" towards the median grade.
-For comparision with the CRC, we ran a reference survey through SurveyMonkey which was given to a random sample of 611 participants from the company's paid pool of California participants.
+For comparison with the CRC, we ran a reference survey through SurveyMonkey which was given to a random sample of 611 participants from the company's paid pool of California participants.
 In this survey, we asked participants to respond to the same questions as the CRC on the same grading scale; but without the feedback of the median grade.
 Being a randomized survey, the reference survey has less problems with self-selection biases which may exist in the CRC participants. 
 
@@ -38,5 +38,5 @@ In this paper, we test the hypothesis of social herding, propose a model for the
 We develop non-parametric testing procedure, based on the Wilcoxon Rank-Sum statistic (also called the Mann-Whitney statistic) \cite{lehmann2006nonparametrics}, to test these hypotheses.
 We explore this hypothesis in a dataset where ratings can take on 13 possible vales from (A+ to F), lending itself to a non-parametric approach where we do not have to make assumptions about the distribution of the data.
 In addition to the hypothesis testing, we model grade changes with a polynomial regression.
-As before, to avoid having to make a strong assumption about the structure of the model, we use an information theoretic model to learn a flexibile degree polynomial.
+As before, to avoid having to make a strong assumption about the structure of the model, we use an information theoretic model to learn a flexible degree polynomial.
 
