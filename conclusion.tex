@@ -9,20 +9,15 @@ The California Report Card collects textual suggestions from participants in add
 Participants are encouraged to read the responses of others before leaving a suggestion of their own.
 We suspect that this may lead to a bias in the topics discussed by participants, and we would like to explore how similar non-parametric models can be extended to textual data.
 We hypothesize that unlike social herding, participants may try to differentiate their ideas from ones they have already ready.
-
-A compelling statistical direction is to attempt to parameterize our model.
-We will explore whether we can model the grades as a mixture of binomial distributions (a discrete analog of a mixture of Gaussians), and try to derive optimal tests and models for this data.
-We believe that proper parametrization, that accurate models multimodality and discreteness, should lead to increased statistical power and better fitting models.
-
 \section{Conclusion}
 Revealing aggregate statistics is a common feature of many rating systems.
 We worked with a new platform, the California Report Card, which revealed the median rating after participants left their own rating.
-Participants has the opportunity to change their ratings after seeing the median for the population.
+Participants have the opportunity to change their ratings after seeing the median for the population.
 We proposed non-parametric hypothesis tests based on the Wilcoxon rank-sum test to determine whether or not revealing the median encouraged participants to \emph{herd} towards the median grade.
 Comparing the data to a randomized reference suvery, we found that changed grades were statistically significantly closer to the median.
 We modeled these changes with polynomial function, whose degree we chose optimally using the Bayes Information Criterion. 
 We found that this relationship was linear in four out of the six issues suggesting homogeneity in biasing for positive and negative differences with the median.
-For remaining two issues, we found that the positive bias was more significant than the negative one.
+For remaining two issues, we found that the negative bias, the downward tendency for participants who graded higher than the median, was much stronger than the positive bias.
 
 The motivation for a non-parametric approach was to make as few modeling assumptions about the distribution of ratings.
 Recommender and rating systems use a variety of different input techniques eg. sliders, stars, drop-down menus etc., all with their own biases and data distributions.

@@ -8,9 +8,9 @@ In other words, given a participant's current grade, the median they observed, c
 Previous work, suggests that Social Influence is not a homogenous bias, namely, positive influences are different from negative influences.
 In Muchnik et al. \cite{muchnik2013social}, they found that when they positively treated posts with higher up-vote counts in Reddit it lead to a significant increase in the likelihood of additional up votes (32\% more likely). 
 On the other hand, they argue negative treatments inspired correction behavior; where some participants wanted to correct what they felt was an incorrect score. 
-They found that this also increased the likelihood of up-voting (88\% more likely).
+They found that this also increased the likelihood of up-voting (88\% more likely); as opposed to the herding response which would be increased down-votes.
 
-These results suggest that the effects of social herding can be non-linear and are very context/question dependent.
+These results suggest that the effects of viewing median grades can be non-linear and are very context/question dependent.
 Similar to the previous section where we applied non-parametric tests that did not make a strong assumption about the distribution of the data, we propose a information theoretic model search that allows flexible parameter selection without making strong assumptions about the nature of the relationship.
 Conditioned on the event that the participant changes their grade, we learn a functional relationship between the observed median and initial grade that can be a polynomial of any degree.
 While the space of all polynomial models is fairly exhaustive, we acknowledge that this model can only fit curves that are continous and smooth.
@@ -37,5 +37,3 @@ Thus, we reformulate the optimization problem in the following way to incorporat
 \end{equation}
 The resulting optimal polynomal will tell how the regression affects varies as a function of $m[j] - g_i[j]$ while controlling for over-fitting to our data.
 In general, this optimization problem is non-convex so we incrementally try polynomials of degree 1,2,3.. etc. until we reach a local minimum.
-
-

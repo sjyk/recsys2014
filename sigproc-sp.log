@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 MAY 2014 15:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  3 MAY 2014 03:04
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -481,18 +481,18 @@ Package caption Info: subfigure package is loaded.
 ) (./sigproc-sp.aux)
 \openout1 = `sigproc-sp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
 
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -511,26 +511,26 @@ LaTeX Font Info:    ... okay on input line 60.
 \AtBeginShipoutBox=\box41
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 103.
+LaTeX Font Info:    Try loading font information for U+msa on input line 109.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 103.
+LaTeX Font Info:    Try loading font information for U+msb on input line 109.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 103.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 109.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 103.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 109.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 103.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 109.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 103.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 109.
 
 
 LaTeX Warning: No \author given.
@@ -542,7 +542,7 @@ File: ../plots/intro.png Graphic file (type png)
 Package pdftex.def Info: ../plots/intro.png used on input line 8.
 (pdftex.def)             Requested size: 210.78912pt x 90.33818pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1242) has occurred while \output is active []
 
  [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -551,7 +551,7 @@ Non-PDF special ignored!
 
  <../plots/intro.png>]) (./related_work.tex)
 (./crc_description.tex
-<../plots/grading-desc-1.png, id=16, 391.7034pt x 197.0562pt>
+<../plots/grading-desc-1.png, id=15, 391.7034pt x 197.0562pt>
 File: ../plots/grading-desc-1.png Graphic file (type png)
 
 <use ../plots/grading-desc-1.png>
@@ -567,42 +567,27 @@ Overfull \hbox (1.87932pt too wide) in paragraph at lines 1--1
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (18.02324pt too wide) in paragraph at lines 21--24
-[]\T1/aer/m/n/9 To ad-dress these three chal-lenges, we pro-pose a non-parametr
-ic
- []
-
-[3 <../plots/grading-desc-1.png>]
 Overfull \hbox (23.538pt too wide) in paragraph at lines 44--47
 \T1/aer/m/n/9 are the same size as $\OML/cmm/m/it/9 X[]$\T1/aer/m/n/9 . Un-der 
 this null hy-poth-e-sis $\OML/cmm/m/it/9 median\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 
 X[]\OT1/cmr/m/n/9 ) =
  []
 
-) (./path_model.tex
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <../plots/grading-desc-1.png>]) (./path_model.tex
 Overfull \hbox (4.6751pt too wide) in paragraph at lines 1--1
 []\secfnt SOCIAL HERD-ING AND QUES-TION OR-
  []
 
-) (./change_model.tex [4]
-Overfull \hbox (12.751pt too wide) in paragraph at lines 13--17
-\T1/aer/m/n/9 Sim-i-lar to the pre-vi-ous sec-tion where we ap-plied non-parame
-tric
- []
-
-) (./results.tex
-Overfull \hbox (4.33055pt too wide) in paragraph at lines 2--38
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--38
+) (./change_model.tex [4]) (./results.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
 
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 7.
 Package epstopdf Info: Source file: <../plots/change-1.eps>
 (epstopdf)                    date: 2014-04-30 16:48:40
 (epstopdf)                    size: 9492 bytes
@@ -611,103 +596,109 @@ Package epstopdf Info: Source file: <../plots/change-1.eps>
 (epstopdf)                    size: 7299 bytes
 (epstopdf)             Command: <epstopdf --outfile=../plots/change-1-eps-conve
 rted-to.pdf ../plots/change-1.eps>
-(epstopdf)             \includegraphics on input line 43.
+(epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
-<../plots/change-1-eps-converted-to.pdf, id=35, 462.72874pt x 362.35374pt>
+<../plots/change-1-eps-converted-to.pdf, id=34, 462.72874pt x 362.35374pt>
 File: ../plots/change-1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../plots/change-1-eps-converted-to.pdf>
 Package pdftex.def Info: ../plots/change-1-eps-converted-to.pdf used on input l
-ine 43.
-(pdftex.def)             Requested size: 161.95749pt x 126.8257pt.
+ine 49.
+(pdftex.def)             Requested size: 129.56316pt x 101.45834pt.
 Package epstopdf Info: Source file: <../plots/abs-deviations-1.eps>
-(epstopdf)                    date: 2014-04-20 19:51:01
-(epstopdf)                    size: 10311 bytes
+(epstopdf)                    date: 2014-05-02 15:06:11
+(epstopdf)                    size: 10965 bytes
 (epstopdf)             Output file: <../plots/abs-deviations-1-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2014-04-20 19:51:49
-(epstopdf)                    size: 7766 bytes
+(epstopdf)                    date: 2014-05-02 15:06:23
+(epstopdf)                    size: 7885 bytes
 (epstopdf)             Command: <epstopdf --outfile=../plots/abs-deviations-1-e
 ps-converted-to.pdf ../plots/abs-deviations-1.eps>
-(epstopdf)             \includegraphics on input line 61.
+(epstopdf)             \includegraphics on input line 64.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/abs-deviations-1-eps-converted-to.pdf, id=36, 888.31876pt x 603.25375
-pt>
+<../plots/abs-deviations-1-eps-converted-to.pdf, id=35, 1004.75375pt x 448.6762
+5pt>
 File: ../plots/abs-deviations-1-eps-converted-to.pdf Graphic file (type pdf)
  <use ../plots/abs-deviations-1-eps-converted-to.pdf>
 Package pdftex.def Info: ../plots/abs-deviations-1-eps-converted-to.pdf used on
- input line 61.
-(pdftex.def)             Requested size: 222.07915pt x 150.81306pt.
- [5 <../plots/change-1-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 68--85
+ input line 64.
+(pdftex.def)             Requested size: 271.28714pt x 121.1442pt.
 
+Overfull \hbox (14.85332pt too wide) in paragraph at lines 63--65
+[]  [] 
  []
 
+[5 <../plots/change-1-eps-converted-to.pdf> <../plots/abs-deviations-1-eps-conv
+erted-to.pdf>]
 Package epstopdf Info: Source file: <../plots/bias-2.eps>
-(epstopdf)                    date: 2014-04-30 17:55:28
-(epstopdf)                    size: 10287 bytes
+(epstopdf)                    date: 2014-05-02 14:58:46
+(epstopdf)                    size: 10878 bytes
 (epstopdf)             Output file: <../plots/bias-2-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-30 18:00:30
-(epstopdf)                    size: 7738 bytes
+(epstopdf)                    date: 2014-05-02 14:58:58
+(epstopdf)                    size: 7924 bytes
 (epstopdf)             Command: <epstopdf --outfile=../plots/bias-2-eps-convert
 ed-to.pdf ../plots/bias-2.eps>
-(epstopdf)             \includegraphics on input line 94.
+(epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
-<../plots/bias-2-eps-converted-to.pdf, id=45, 590.205pt x 468.75125pt>
+
+<../plots/bias-2-eps-converted-to.pdf, id=52, 1021.8175pt x 448.67625pt>
 File: ../plots/bias-2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../plots/bias-2-eps-converted-to.pdf>
 Package pdftex.def Info: ../plots/bias-2-eps-converted-to.pdf used on input lin
-e 94.
-(pdftex.def)             Requested size: 206.57484pt x 164.06538pt.
+e 98.
+(pdftex.def)             Requested size: 275.89441pt x 121.1442pt.
+
+Overfull \hbox (13.9148pt too wide) in paragraph at lines 97--99
+[]  [] 
+ []
+
+Package epstopdf Info: Source file: <../plots/shift-parameter.eps>
+(epstopdf)                    date: 2014-05-02 14:48:16
+(epstopdf)                    size: 8863 bytes
+(epstopdf)             Output file: <../plots/shift-parameter-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2014-05-02 14:48:19
+(epstopdf)                    size: 6985 bytes
+(epstopdf)             Command: <epstopdf --outfile=../plots/shift-parameter-ep
+s-converted-to.pdf ../plots/shift-parameter.eps>
+(epstopdf)             \includegraphics on input line 134.
+Package epstopdf Info: Output file is already uptodate.
+
+<../plots/shift-parameter-eps-converted-to.pdf, id=53, 1041.8925pt x 447.6725pt
+>
+File: ../plots/shift-parameter-eps-converted-to.pdf Graphic file (type pdf)
+ <use ../plots/shift-parameter-eps-converted-to.pdf>
+Package pdftex.def Info: ../plots/shift-parameter-eps-converted-to.pdf used on 
+input line 134.
+(pdftex.def)             Requested size: 260.47249pt x 111.91785pt.
+Package epstopdf Info: Source file: <../plots/path-dependence.eps>
+(epstopdf)                    date: 2014-05-02 14:52:15
+(epstopdf)                    size: 10574 bytes
+(epstopdf)             Output file: <../plots/path-dependence-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2014-05-02 14:52:17
+(epstopdf)                    size: 7316 bytes
+(epstopdf)             Command: <epstopdf --outfile=../plots/path-dependence-ep
+s-converted-to.pdf ../plots/path-dependence.eps>
+(epstopdf)             \includegraphics on input line 165.
+Package epstopdf Info: Output file is already uptodate.
+
+<../plots/path-dependence-eps-converted-to.pdf, id=54, 969.6225pt x 447.6725pt>
+File: ../plots/path-dependence-eps-converted-to.pdf Graphic file (type pdf)
+<use ../plots/path-dependence-eps-converted-to.pdf>
+Package pdftex.def Info: ../plots/path-dependence-eps-converted-to.pdf used on 
+input line 165.
+(pdftex.def)             Requested size: 261.80157pt x 120.87318pt.
+
+Overfull \hbox (5.36775pt too wide) in paragraph at lines 164--166
+[]  [] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--116
-
- []
-
-Package epstopdf Info: Source file: <../plots/shift-parameter.eps>
-(epstopdf)                    date: 2014-04-30 20:44:06
-(epstopdf)                    size: 8466 bytes
-(epstopdf)             Output file: <../plots/shift-parameter-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2014-04-30 20:44:57
-(epstopdf)                    size: 7060 bytes
-(epstopdf)             Command: <epstopdf --outfile=../plots/shift-parameter-ep
-s-converted-to.pdf ../plots/shift-parameter.eps>
-(epstopdf)             \includegraphics on input line 126.
-Package epstopdf Info: Output file is already uptodate.
-
-<../plots/shift-parameter-eps-converted-to.pdf, id=46, 667.49374pt x 501.875pt>
-File: ../plots/shift-parameter-eps-converted-to.pdf Graphic file (type pdf)
-<use ../plots/shift-parameter-eps-converted-to.pdf>
-Package pdftex.def Info: ../plots/shift-parameter-eps-converted-to.pdf used on 
-input line 126.
-(pdftex.def)             Requested size: 186.89697pt x 140.52403pt.
- [6 <../plots/abs-deviations-1-eps-converted-to.pdf> <../plots/bias-2-eps-conve
-rted-to.pdf> <../plots/shift-parameter-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <../plots/path-dependence.eps>
-(epstopdf)                    date: 2014-04-30 22:19:52
-(epstopdf)                    size: 9762 bytes
-(epstopdf)             Output file: <../plots/path-dependence-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2014-04-30 22:34:01
-(epstopdf)                    size: 7193 bytes
-(epstopdf)             Command: <epstopdf --outfile=../plots/path-dependence-ep
-s-converted-to.pdf ../plots/path-dependence.eps>
-(epstopdf)             \includegraphics on input line 159.
-Package epstopdf Info: Output file is already uptodate.
-
-<../plots/path-dependence-eps-converted-to.pdf, id=65, 561.09625pt x 421.575pt>
-File: ../plots/path-dependence-eps-converted-to.pdf Graphic file (type pdf)
-<use ../plots/path-dependence-eps-converted-to.pdf>
-Package pdftex.def Info: ../plots/path-dependence-eps-converted-to.pdf used on 
-input line 159.
-(pdftex.def)             Requested size: 168.33017pt x 126.47346pt.
 Package epstopdf Info: Source file: <../plots/BIC-optimization.eps>
 (epstopdf)                    date: 2014-04-30 22:53:33
 (epstopdf)                    size: 148065 bytes
@@ -717,52 +708,112 @@ Package epstopdf Info: Source file: <../plots/BIC-optimization.eps>
 (epstopdf)                    size: 55398 bytes
 (epstopdf)             Command: <epstopdf --outfile=../plots/BIC-optimization-e
 ps-converted-to.pdf ../plots/BIC-optimization.eps>
-(epstopdf)             \includegraphics on input line 168.
+(epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/BIC-optimization-eps-converted-to.pdf, id=66, 1748.5325pt x 393.47pt>
+<../plots/BIC-optimization-eps-converted-to.pdf, id=55, 1748.5325pt x 393.47pt>
 File: ../plots/BIC-optimization-eps-converted-to.pdf Graphic file (type pdf)
 <use ../plots/BIC-optimization-eps-converted-to.pdf>
 Package pdftex.def Info: ../plots/BIC-optimization-eps-converted-to.pdf used on
- input line 168.
+ input line 174.
 (pdftex.def)             Requested size: 629.47122pt x 141.64908pt.
 
-Overfull \hbox (62.82288pt too wide) in paragraph at lines 167--169
+Overfull \hbox (62.82288pt too wide) in paragraph at lines 173--175
 []  [] 
  []
 
-) (./conclusion.tex [7 <../plots/path-dependence-eps-converted-to.pdf>])
-(./sigproc-sp.bbl) [8 <../plots/BIC-optimization-eps-converted-to.pdf>]
-(./sigproc-sp.aux) ) 
+[6 <../plots/bias-2-eps-converted-to.pdf> <../plots/shift-parameter-eps-convert
+ed-to.pdf>]
+Underfull \vbox (badness 1048) has occurred while \output is active []
+
+Package epstopdf Info: Source file: <../plots/prediction-error.eps>
+(epstopdf)                    date: 2014-05-02 18:45:11
+(epstopdf)                    size: 8936 bytes
+(epstopdf)             Output file: <../plots/prediction-error-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2014-05-02 18:52:42
+(epstopdf)                    size: 7386 bytes
+(epstopdf)             Command: <epstopdf --outfile=../plots/prediction-error-e
+ps-converted-to.pdf ../plots/prediction-error.eps>
+(epstopdf)             \includegraphics on input line 209.
+Package epstopdf Info: Output file is already uptodate.
+
+<../plots/prediction-error-eps-converted-to.pdf, id=69, 1040.88875pt x 399.4925
+pt>
+File: ../plots/prediction-error-eps-converted-to.pdf Graphic file (type pdf)
+ <use ../plots/prediction-error-eps-converted-to.pdf>
+Package pdftex.def Info: ../plots/prediction-error-eps-converted-to.pdf used on
+ input line 209.
+(pdftex.def)             Requested size: 270.6247pt x 103.86559pt.
+Package epstopdf Info: Source file: <../plots/shit-2.eps>
+(epstopdf)                    date: 2014-05-02 19:11:19
+(epstopdf)                    size: 10987 bytes
+(epstopdf)             Output file: <../plots/shit-2-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-05-02 19:15:32
+(epstopdf)                    size: 8068 bytes
+(epstopdf)             Command: <epstopdf --outfile=../plots/shit-2-eps-convert
+ed-to.pdf ../plots/shit-2.eps>
+(epstopdf)             \includegraphics on input line 211.
+Package epstopdf Info: Output file is already uptodate.
+
+<../plots/shit-2-eps-converted-to.pdf, id=70, 1031.855pt x 409.53pt>
+File: ../plots/shit-2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../plots/shit-2-eps-converted-to.pdf>
+Package pdftex.def Info: ../plots/shit-2-eps-converted-to.pdf used on input lin
+e 211.
+(pdftex.def)             Requested size: 268.27597pt x 106.47528pt.
+
+Overfull \hbox (14.19087pt too wide) in paragraph at lines 208--212
+[]|  []
+ []
+
+
+Overfull \hbox (11.84215pt too wide) in paragraph at lines 208--212
+|  [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./conclusion.tex [7 <../plots/BIC-optimization-eps-converted-to.pdf> <../plo
+ts/path-dependence-eps-converted-to.pdf>])
+Underfull \vbox (badness 1325) has occurred while \output is active []
+
+
+(./sigproc-sp.bbl) [8 <../plots/prediction-error-eps-converted-to.pdf> <../plot
+s/shit-2-eps-converted-to.pdf>] (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 8085 strings out of 493315
- 114638 string characters out of 6137904
+ 8112 strings out of 493315
+ 115175 string characters out of 6137904
  234763 words of memory out of 5000000
- 11301 multiletter control sequences out of 15000+600000
- 63596 words of font info for 90 fonts, out of 8000000 for 9000
+ 11318 multiletter control sequences out of 15000+600000
+ 68221 words of font info for 101 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,10n,39p,822b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r
-.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.
-pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cme
-x9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5
-.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on sigproc-sp.pdf (8 pages, 531034 bytes).
+ 42i,10n,39p,822b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/te
+xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
+e1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2013/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uh
+vb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+Output written on sigproc-sp.pdf (8 pages, 553689 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 160 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

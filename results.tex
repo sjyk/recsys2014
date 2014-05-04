@@ -2,6 +2,8 @@
 We evaluated our models on data collected from the California Report Card between January 18th to April 20th.
 We adminstered our reference survey through SurveyMonkey between March 8th and March 14th.
 We consider a set of 1575 total participants from the CRC and a sample of 611 SurveyMonkey participants whose grading activity was as follows:\\[1\baselineskip]
+
+{\centering\scriptsize
 \begin{tabular}[!ht]{ l | r | r | r | l }
 Issue & No Change & Change & Skip & Median \\
 \hline
@@ -35,36 +37,37 @@ Issue & No Change & Change & Skip & Median \\
   \hline
   Marriage Rights & 554 & - & 57 & B+
 \end{tabular}\\[1\baselineskip]
+}
 
 For any given issue, between 10\% and 20\% of those who assigned grades registered a grade change.
 In all, 556 out of the 1575 CRC participants changed their grades at least once (Figure \ref{change-1}).
-\begin{figure}[hb]
+We also found that the aggregate results of the reference survey matched the CRC quite well.
+On only two issues (K12 and Immigration), we found a observed differences which were both less than a letter grade (+ or -).
+\begin{figure}[h]
+\vspace{-1.5em}
   \centering
-    \includegraphics[scale=.35]{../plots/change-1.eps}
+    \includegraphics[scale=.28]{../plots/change-1.eps}
       \caption{The majority of participants did not change grades. 35\% of participants changed their grade on at least one issue, the majority of which (62\%) changed only a single issue. Less than 5\% of participants changed their grades on more than 4 out of the 6 issues.}
       \label{change-1}
 \end{figure}
-We also found that the aggregate results of the reference survey matched the CRC quite well.
-On only two issues (K12 and Immigration), we found a observed differences which were both less than a letter grade (+ or -).
-
 In our evaluation of these two surveys, we will use the unit \emph{full letter grades}.
 For example, one full letter grade corresponds to the difference between an A grade and a B grade. 
 A difference of a + or - is represented as $\frac{1}{3}$ eg. B to B+ or B+ to A-. 
-
 \subsection{Social Herding Towards the Median}
 Using the non-parametric test proposed in Section \ref{ht}, we tested the hypothesis of whether grade changes led to significantly more concentration around the median grade.
 In our first experiment (Figure \ref{mdev-1}), we tested the absolute deviations of only the CRC participants.
 We compared the group of participants that did not change their grades to the group that changed their grades.
 We found that while there were no statistically significant differences between the initial grades of the two groups, the final grades of the group that changed were statistically significantly more concentrated than both their own initial grades and the grades of the no change group.
+For the set of participants who changed their grades $P_c$ and those who did not $P_n$:
 \begin{figure}[h]
-  \centering
-    \includegraphics[scale=0.25]{../plots/abs-deviations-1.eps}
+\hspace{-2em}
+    \includegraphics[scale=0.27]{../plots/abs-deviations-1.eps}
       \caption{For those participants that changed their grades, final grades were significantly more concentrated around the median grade than their initial grades. In addition, these grades are more concentrated than the grades for those who didn't change.}
       \label{mdev-1}
 \end{figure}
 
-For the set of participants who changed their grades $P_c$ and those who did not $P_n$:
-
+{\centering
+\scriptsize
 \begin{tabular}[!ht] { r | r | r }
 \label{dev-2}
   Issue & p-val($P_c$ vs. $P_n$) & p-val($i$ vs. $f$) \\
@@ -82,6 +85,7 @@ For the set of participants who changed their grades $P_c$ and those who did not
   \hline
   Marriage Rights & 3.5946e-06 & 2.4644e-10 \\
 \end{tabular}\\[1\baselineskip]
+}
 
 These results are consistent with the social herding hypothesis.
 When participants change their grades, they are more likely to concentrate around the median.
@@ -90,12 +94,14 @@ What is particularly surprising is that the two groups of participants $P_n$ and
 In our second experiment (Figure \ref{mdev-2}), we apply the same testing procedure to compare the grades from the CRC to to those in the reference survey.
 We absolute deviations of the group of participants who changed their grades in the CRC against participants from the reference survey.
 \begin{figure}[h]
-  \centering
-    \includegraphics[scale=0.35]{../plots/bias-2.eps}
+\hspace{-2.6em}
+    \includegraphics[scale=0.27]{../plots/bias-2.eps}
       \caption{We found that final grades were significantly more concentrated in the CRC compared to grades in the reference survey. Similar to Figure \ref{mdev-1}, we found that there was no statistically significant difference between the reference survey and the initial grades.}
       \label{mdev-2}
 \end{figure}
 
+{\centering
+\scriptsize
 \begin{tabular}[!ht] { r | r | r }
 \label{ref-1}
   Issue & p-val($R$ vs. $i$) & p-val($R$ vs. $f$) \\
@@ -113,6 +119,7 @@ We absolute deviations of the group of participants who changed their grades in 
   \hline
   Marriage Rights & 0.2478 & 0.0161 \\
 \end{tabular}\\[1\baselineskip]
+}
 
 The results of our two experiments suggest that the CRC rating data is affected by social herding.
 We not only found that participants' changed grades were statistically significantly more likely to concentrate around the median, they were also more likely in comparision to the reference survey.
@@ -122,12 +129,12 @@ However, our comparision with the reference survey, and discovery that initial g
 These results are encouraging and we hope to run a randomized participant study to confirm the causal relationship between revealing the median and concentrated grades.
 
 \begin{figure}[ht!]
-  \centering
-    \includegraphics[scale=0.28]{../plots/shift-parameter.eps}
+\centering
+  \hspace{-3em}
+    \includegraphics[scale=0.25]{../plots/shift-parameter.eps}
       \caption{We calculate the parameter $\Delta$ which is the most likely amount that our observations deviate from the null hypothesis. This can be interpreted as how much more are grades in our change group concentrated around the median.}
       \label{shift-1}
 \end{figure}
-
 \subsection{Social Herding Effects}
 We tested the hypotheses and conclude significant additional concentration of grades around the median grade.
 In Section \ref{ht}, we described how we could use the results of the hypothesis test to estimate the $\Delta$ parameter, which quantifies how different the hypothesis is from the null distribution.
@@ -145,7 +152,6 @@ The simplest model we could design is a model where we always select the median 
 Such a model is often used as a baseline for comparision in recommender systems.
 What we may interpret as low prediction error may in fact be the effects of social herding around the median, and if we were to apply this model asking the same questions but in a system without the herding effects; we may find that the same model performs poorly.
 A median prediction is a naive model, but this problem affects many recommendation algorithms since they often rely on proximity metrics such as clustering, k-nearest neighbors, and some kernel machine learning methods.
-
 \subsection{Order Dependence and Social Herding}
 Using the model proposed in Section \ref{path}, we calculated the test statistics for both the CRC and the Reference Survey.
 Recall, that this model calculate the change in disagreement with the median; that is, how much did a participant disagree with the median on past responses compared 
@@ -155,8 +161,8 @@ Figure \ref{path-1} illustrates the results of the experiment for the five last 
 The experimental results were not as significant as the other experiments and we found that only two issues Immigration (p=0.0037) and Marijuana (p=0.0287) showed an order dependence that was significantly greater than the reference survey.
 For the other issues it is not clear if and how order plays a role in the social herding bias.
 \begin{figure}[h]
-  \centering
-    \includegraphics[scale=0.30]{../plots/path-dependence.eps}
+	\hspace{-2em}
+    \includegraphics[scale=0.27]{../plots/path-dependence.eps}
       \caption{We measure the mean change in disagreement for each issue. The change in disagreement is defined as the average deviation with median on previous issues minus the deviation with the median on the current issue. We hypothesized that the CRC would have comparatively greater (or less negative) values than the reference survey.}
       \label{path-1}
 \end{figure}
@@ -169,7 +175,6 @@ This underscores the subtlty social herding and social influence bias as they ar
       \caption{For the participants that changed their grades, we plot the difference between their grade and the median (X-axis), and their changed grade (Y-axis). We overlay the optimal polynomial model to represent the relationship $f(x) = y$. Below each plot, is the BIC objective function showing how we picked an optimal degree of polynomial.}
       \label{opt-1}
 \end{figure*}
-
 \subsection{Predicting Grade Changes}
 We train the polynomial model proposed in Section \ref{changemod}, and the results are shown in Figure \ref{opt-1}.
 Our model search and optimization through the BIC discovered that for four out of the six issues, K12, College, Immigration, and Marijuana, the model was linear.
@@ -180,9 +185,33 @@ Participants who initially graded the state higher than the median had a more si
 
 These models further illustrate the subtlty of social influence bias. 
 In Muchnik et al. they observed a biasing tendency where both positive and negative influence led to increased upward bias (due to herding and correcting tendencies respectively).
-Compared to those results, our results are quite different as we observe just herding for both positive and negative influences.
+Compared to those results, our results are quite different as we observe herding for both positive and negative influences.
 One possible explanation is that since our mechanism for social influence is revealing the true grade, not modifying the grade (thus showing an ``incorrect" value), the correcting tendency is not significant.
 
+We also tested our model in terms of RMSE prediction error (Figure \ref{poly-1}). 
+We held out 20\% of the pairs of ratings (observed change, actual) and tested the prediction error on this held out set.
+We found that our model on average, over all issues, predicted final grade within $0.5150$ letter grades.
+Note that 1/3 of a letter grade corresponds to the difference of just a + or - grade.
+
+We can further look at the \emph{inverse} model performance, that is, inverting the polynomal regression where we predict the change amount given the final grade and the median.
+In a second experiment (Figure \ref{poly-1}), we re-calculated the shift-parameter $\Delta$ after applying the inverse model correcting for the social herding.
+We found that there was on average a 46.5\% reduction in $\Delta$ which quantifies the herding around the median. 
+This suggests that our predictive model can significantly mitigate the effects of social herding.
+
+Consider the following application of such a model.
+If we have collected rating data that we suspect is affected by Social Influence Bias towards a revealed aggregate statistic.
+We can run a controlled experiment offline to collect training data that collects initial and final ratings.
+We can fit our polynomial model to that data and apply the model to correct our bigger dataset.
+The corrected data will more accurately reflect the spread of ratings around the aggregate statistic mitigating the herding around the revealed value.
+
+\begin{figure}[h]
+\hspace*{-2em}
+    \includegraphics[scale=0.26]{../plots/prediction-error.eps}
+    \hspace*{-2em}
+    \includegraphics[scale=0.26]{../plots/shit-2.eps}
+      \caption{We measured the RMSE prediction error of the polynomial model. We found that we could predict changes in all of the issues with less than 2/3 of a letter grade RMSE error. We applied this model to correct for the Social Influence bias and found that, on average, we could reduce herding effects by 46.5\%}
+      \label{poly-1}
+\end{figure}
 
 
 
