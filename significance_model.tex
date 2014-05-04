@@ -5,12 +5,12 @@ The first challenge is that parametric significance tests comparing two sample m
 perform poorly for multimodal and discrete distributions.
 Another significance test that is commonly applied to compare spreads of distributions is the F-test, which is also known to perform poorly for many non-normal distributions \cite{markowski1990conditions}.
 Furthermore, this test is usually used to test the spread of data around the mean, which only in very special conditions, such as normal distributions, aligns with the median which is relevant to our problem. 
-The discretness of our data leads to mutli-modal distributions which are not optimal for these testing methods.
+The discreteness of our data leads to mutli-modal distributions which are not optimal for these testing methods.
 
 The second challenge is that there is a natural tendency for grades to concentrate around the median even without a bias.
 Consider the following participant behavioral model.
-Suppose that participants are not acustomed to a slider-based input.
-We can model the first grade that the particpant leaves as uniformly randomly anywhere on the slider.
+Suppose that participants are not accustomed to a slider-based input.
+We can model the first grade that the participant leaves as uniformly randomly anywhere on the slider.
 As the participant begins to understand how to use the slider their use becomes more accurate, ultimately settling on a grade from our observed distribution of final grades.
 This model, the first grade is uniformly random and the second grade is a sample from the observed distribution, would result in a strong regression towards the median; even if there is no causal link with seeing the median.
 
@@ -50,7 +50,7 @@ Therefore, the null expected value and variance of $W$ is:
 \begin{equation}
 var(W) = \frac{(|\textbf{X}| + 1)\cdot |X_c| \cdot |X_n|}{12}
 \end{equation}
-For the significance level $\alpha$, we can test the probability that our calcuated $W_c$ comes from the null distribution.
+For the significance level $\alpha$, we can test the probability that our calculated $W_c$ comes from the null distribution.
 In other words, the test calculates the probability that a random subset of users (ignoring the categorization $P_n$ and $P_c$) can have the observed difference in rank-sum values.
 A significant result means that for the participants that changed their grades the changed changes are more tightly centered around the median grade they observed.
 
@@ -67,7 +67,7 @@ X_c' = \{|m[j] - g_i[j]|\}\text{ }\forall j \in P_c
 In addition to testing the hypothesis, we can also quantify the effects of social herding. 
 We tested the significance of the absolute deviations using a Wilcoxon test statistic.
 The Wilcoxon statistic can be inverted to estimate a most likely \emph{shift parameter}, that a constant shift $\Delta$ in the distribution of absolute deviations $X_c$ that maximally aligns them with $X_n$ (ie. $X_c + \Delta$ is most supported by the null hypothesis). 
-Since $X_c$ is a set of absoulte deviations, $\Delta$ tells us how much more concentrated $X_c$ is than $X_n$ around the observed medians.
+Since $X_c$ is a set of absolute deviations, $\Delta$ tells us how much more concentrated $X_c$ is than $X_n$ around the observed medians.
 This parameter is relevant to the design of recommendation algorithms use proximity (eg. clustering or nearest neighbors).
 
 We refer to \cite{lehmann2006nonparametrics} on the derivation of $\Delta$ and its confidence interval:

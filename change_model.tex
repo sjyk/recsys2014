@@ -13,7 +13,7 @@ They found that this also increased the likelihood of up-voting (88\% more likel
 These results suggest that the effects of viewing median grades can be non-linear and are very context/question dependent.
 Similar to the previous section where we applied non-parametric tests that did not make a strong assumption about the distribution of the data, we propose a information theoretic model search that allows flexible parameter selection without making strong assumptions about the nature of the relationship.
 Conditioned on the event that the participant changes their grade, we learn a functional relationship between the observed median and initial grade that can be a polynomial of any degree.
-While the space of all polynomial models is fairly exhaustive, we acknowledge that this model can only fit curves that are continous and smooth.
+While the space of all polynomial models is fairly exhaustive, we acknowledge that this model can only fit curves that are continuous and smooth.
 
 Let $f\in \mathcal{P}^k$ be a polynomial of degree $k$.
 The square loss of $f$, is the error in predicting $g_f[j] - g_i[j]$ from $f(m[j] - g_i[j])$:
@@ -26,7 +26,7 @@ f^*_k =\arg \min_f \mathcal{L}(X_c;f,k)
 \end{equation}
 For a given $k$, this problem can be solved with least squares.
 To search over the space of polynomial models, we apply a well-studied technique called the Bayesian Information Criterion (BIC) \cite{schwarz1978estimating,burnham2002model}.
-This technique converts the optimization problem into a penalized problem that jointly optimizes over the ``complexity parameter" k.
+This technique converts the optimization problem into a penalized problem that jointly optimizes over the ``complexity parameter" $k$.
 This penalty can be interpreted as bias towards lower degree models, in other words, an Occam's Razor prior belief. 
 Cross-validation is an alternate method to empirically determine optimal model, and in practice, they give very similar results.
 BIC, however, is derived through maximum likelihood estimate and is not an empirical so the learned model has a notion of optimality conditioned on the BIC prior belief.
@@ -35,5 +35,5 @@ Thus, we reformulate the optimization problem in the following way to incorporat
 \begin{equation}
 \arg \min_{f,k} |X_c|\log(\mathcal{L}(X_c;f,k)) + k\log(|X_c|)
 \end{equation}
-The resulting optimal polynomal will tell how the regression affects varies as a function of $m[j] - g_i[j]$ while controlling for over-fitting to our data.
+The resulting optimal polynomial will tell how the regression affects varies as a function of $m[j] - g_i[j]$ while controlling for over-fitting to our data.
 In general, this optimization problem is non-convex so we incrementally try polynomials of degree 1,2,3.. etc. until we reach a local minimum.
