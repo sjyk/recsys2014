@@ -1,5 +1,5 @@
-\section{Social Herding Towards the Median Hypothesis Test}\label{ht}
-In this section, we test the \textbf{Social Herding Towards the Median} hypothesis, by analyzing spread of grades around the median grade for the participants that changed their grades.
+\section{Social Influence Test}\label{ht}
+In this section, we test \textbf{Hypothesis 1}, by analyzing spread of grades around the median grade for the participants that changed their grades.
 There are three principle challenges in testing this hypothesis.
 The first challenge is that parametric significance tests comparing two sample means such as the two sample t-test and z-test are known to 
 perform poorly for multimodal and discrete distributions.
@@ -64,9 +64,9 @@ X_c' = \{|m[j] - g_i[j]|\}\text{ }\forall j \in P_c
 \end{equation}
 
 \subsection{Quantifying Concentration of Grades}
-In addition to testing the hypothesis, we can also quantify the effects of social herding. 
+In addition to testing the hypothesis, we can also estimate by how much the absolute deviations smaller. 
 We tested the significance of the absolute deviations using a Wilcoxon test statistic.
-The Wilcoxon statistic can be inverted to estimate a most likely \emph{shift parameter}, that a constant shift $\Delta$ in the distribution of absolute deviations $X_c$ that maximally aligns them with $X_n$ (ie. $X_c + \Delta$ is most supported by the null hypothesis). 
+The Wilcoxon statistic can be inverted to estimate a most likely \emph{shift parameter}, that a shift $\Delta$ in the distribution of absolute deviations $X_c$ that maximally aligns them with $X_n$ (ie. $X_c + \Delta$ is most supported by the null hypothesis). 
 Since $X_c$ is a set of absolute deviations, $\Delta$ tells us how much more concentrated $X_c$ is than $X_n$ around the observed medians.
 This parameter is relevant to the design of recommendation algorithms use proximity (eg. clustering or nearest neighbors).
 

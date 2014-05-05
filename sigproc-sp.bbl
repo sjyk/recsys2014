@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{abernethy2009new}
+J.~Abernethy, F.~Bach, T.~Evgeniou, and J.-P. Vert.
+\newblock A new approach to collaborative filtering: Operator estimation with
+  spectral regularization.
+\newblock {\em The Journal of Machine Learning Research}, 10:803--826, 2009.
+
 \bibitem{albors2008new}
 J.~Albors, J.~C. Ramos, and J.~L. Hervas.
 \newblock New learning network paradigms: Communities of objectives,
@@ -21,6 +27,12 @@ S.~E. Asch.
 A.~V. Banerjee.
 \newblock A simple model of herd behavior.
 \newblock {\em The Quarterly Journal of Economics}, 107(3):797--817, 1992.
+
+\bibitem{basilico2004unifying}
+J.~Basilico and T.~Hofmann.
+\newblock Unifying collaborative and content-based filtering.
+\newblock In {\em Proceedings of the twenty-first international conference on
+  Machine learning}, page~9. ACM, 2004.
 
 \bibitem{bikhchandani2000herd}
 S.~Bikhchandani and S.~Sharma.
@@ -63,11 +75,11 @@ U.~M. Dholakia, S.~Basuroy, and K.~Soltysinski.
 \newblock {\em International Journal of Research in Marketing}, 19(2):115--130,
   2002.
 
-\bibitem{groves2013survey}
-R.~M. Groves, F.~J. Fowler~Jr, M.~P. Couper, J.~M. Lepkowski, E.~Singer, and
-  R.~Tourangeau.
-\newblock {\em Survey methodology}.
-\newblock John Wiley \& Sons, 2013.
+\bibitem{harrington2003online}
+E.~F. Harrington.
+\newblock Online ranking/collaborative filtering using the perceptron
+  algorithm.
+\newblock In {\em ICML}, volume~20, pages 250--257, 2003.
 
 \bibitem{huang2006herding}
 J.-H. Huang and Y.-F. Chen.
@@ -90,6 +102,11 @@ J.~Lorenz, H.~Rauhut, F.~Schweitzer, and D.~Helbing.
 \newblock How social influence can undermine the wisdom of crowd effect.
 \newblock {\em Proceedings of the National Academy of Sciences},
   108(22):9020--9025, 2011.
+
+\bibitem{jian2012incentive}
+J.~K. MacKie-Mason.
+\newblock Incentive-centered design for user-contributed content.
+\newblock 2012.
 
 \bibitem{markowski1990conditions}
 C.~A. Markowski and E.~P. Markowski.

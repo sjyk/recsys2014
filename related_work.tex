@@ -1,19 +1,16 @@
 \section{Related Work}
-In Asch's famous conformity experiments \cite{asch1956studies, asch1955opinions, bond1996culture}, groups of participants were asked to match a line with a set of three different sized lines one of which was of the correct size.
-In reality, only one of the participants was ``real" and the others were actors who unanimously chose an incorrect choice.
-On average, 25\% of participants conformed to the incorrect consensus compared to 1\% of incorrect answers in a control group.
 
 %% In the context of recommender systems, social influence has been studied primarily in order to use information about social and trusted friend networks to improve recommendations. Jamali et al. described a stochastic block model which predicts recommendations based on both social relations and rating behavior [A]. Shang et al. described models for for improving recommendations among individuals using the theory of social contagion, and among groups using network theory [B]. Ye et al. proposed a quantification metric of social influence, and proposed probabilstic model to model the decision of item selection [C].
 
 %% However, the Asch model for confirmity suggest a particular biasing effect from an aggregate or ``crowd'' (i.e. the previous raters are anonymous to the current rater). This phenomenon known as social herding ...
 
-The Asch model for conformity is the theoretical basis for social herding \cite{banerjee1992simple,bikhchandani2000herd}, and herding has been a popular consumer choice model in economics \cite{burnkrant1975informational,dholakia2002auction,huang2006herding}. 
+The Asch model for conformity is the theoretical basis for \emph{social herding}, the tendency to conform \cite{banerjee1992simple,bikhchandani2000herd}, and herding has been a popular consumer choice model in economics \cite{burnkrant1975informational,dholakia2002auction,huang2006herding}. 
 Such models have also been studied in psychology as ``persuasion bias" \cite{demarzo2003persuasion}.
 In 2011, Lorenz et al. described how these biases can undermine the effectiveness of crowd intelligence in estimation tasks \cite{lorenz2011social}. 
 They argue that social herding causes a diminished diversity of opinion potentially leading to inefficiencies and inaccurate collective estimates.
 Danescu-Niculescu-Mizil et al. analyze helpfulness ratings on Amazon product reviews \cite{danescu2009opinions}.
 They found that the helpfulness ratings did not just depend on the content of the review but also its aggregate score and its relationship to other scores.
-In order to better distinguish social influence from other biases, Muchnik et. al designed a randomized experiment in which comments on Reddit.com were randomly up-treated or down-treated \cite{muchnik2013social}.
+In order to better distinguish social influence from other biases, Muchnik et. al designed a randomized experiment in which comments in an online forum were randomly up-treated or down-treated \cite{muchnik2013social}.
 They concluded a statistically significant bias where a positive treatment increased the likelihood of positive ratings by 32\%. 
 In both Danescu-Niculescu-Mizil et al. and Muchnik et al., they looked at the problem of Social Influence bias in an a priori setting, where users see the aggregate statistic before giving their rating.
 Our work tests for a particular form of social influence where users are given the opportunity to change their opinions following the feedback. 

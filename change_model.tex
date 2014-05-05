@@ -1,17 +1,17 @@
 \section{Predicting Magnitude of Grade Changes}
 \label{changemod}
-In the previous two sections, we proposed a technique to test the significance of the social herding hypothesis.
+In the previous two sections, we proposed a technique to test the significance of social influence in the grades that changed.
 In this section, we build a model to describe the relationship between the variables in the 3-tuple ($g_i[j]$, $m[j]$, $g_f[j]$).
 In other words, given a participant's current grade, the median they observed, can we predict the final grade?
 
 \subsection{Modeling Changes}
-Previous work, suggests that Social Influence is not a homogenous bias, namely, positive influences are different from negative influences.
-In Muchnik et al. \cite{muchnik2013social}, they found that when they positively treated posts with higher up-vote counts in Reddit it lead to a significant increase in the likelihood of additional up votes (32\% more likely). 
+Previous work, suggests that social influence is not a homogenous bias, namely, positive influences are different from negative influences.
+In Muchnik et al. \cite{muchnik2013social}, they found that when they positively treated posts with higher up-vote counts it lead to a significant increase in the likelihood of additional up votes (32\% more likely). 
 On the other hand, they argue negative treatments inspired correction behavior; where some participants wanted to correct what they felt was an incorrect score. 
 They found that this also increased the likelihood of up-voting (88\% more likely); as opposed to the herding response which would be increased down-votes.
 
 These results suggest that the effects of viewing median grades can be non-linear and are very context/question dependent.
-Similar to the previous section where we applied non-parametric tests that did not make a strong assumption about the distribution of the data, we propose a information theoretic model search that allows flexible parameter selection without making strong assumptions about the nature of the relationship.
+Similar to the previous section where we applied non-parametric tests that did not make a strong assumption about the distribution of the data, we propose a information theoretic polynomial function search that does not make strong assumptions about the nature of the relationship.
 Conditioned on the event that the participant changes their grade, we learn a functional relationship between the observed median and initial grade that can be a polynomial of any degree.
 While the space of all polynomial models is fairly exhaustive, we acknowledge that this model can only fit curves that are continuous and smooth.
 
@@ -36,4 +36,13 @@ Thus, we reformulate the optimization problem in the following way to incorporat
 \arg \min_{f,k} |X_c|\log(\mathcal{L}(X_c;f,k)) + k\log(|X_c|)
 \end{equation}
 The resulting optimal polynomial will tell how the regression affects varies as a function of $m[j] - g_i[j]$ while controlling for over-fitting to our data.
-In general, this optimization problem is non-convex so we incrementally try polynomials of degree 1,2,3.. etc. until we reach a local minimum.
+\subsection{Kernels and Recommender Systems Applications}
+Suppose, we have collected rating data that we suspect is affected by social influence bias, and want to train a model that better captures recommendations with respect to ratings without social influence.
+We can run a controlled experiment offline to collect training data that collects both initial ratings before a participant sees the aggregate and final ratings after.
+Then we modify and invert the loss function with the dependent variable defined as $g_f[j]$ and the independent variable $m[j] - g_i[j]$.
+We optimize using the BIC over this loss, and calculate the optimal polynomial $f^{-1}$, which maps final grades to observed differences with the median grade.
+We call $q(j) = m[j] - f^{-1}(g_f[j])$ the optimal \emph{inverse model} as it predicts the initial grade for participant $j$.
+Kernel machine learning techniques have been widely applied in recommender systems \cite{abernethy2009new,basilico2004unifying,harrington2003online}.
+All kernels define a measure of similarity between two feature vectors through the \emph{kernel function}.
+Let $k(i,j)$, be the kernel function for two participants $i$ and $j$ which we can re-parametrize as $k(q(i),q(j))$.
+After re-parametrization, we can proceed as before with our recommendation algorithm using the modified kernel, for example, in Kernel PCA, we would find the eigenvectors of the $N \times N$ matrix of participants $k(q(i),q(j))$.
