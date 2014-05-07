@@ -63,7 +63,7 @@
 
 \begin{document}
 
-\title{Social Influence Bias in Recomender Systems: A Non-Parametric Analysis of Multi-valued Data From the California Report Card}
+\title{Social Influence Bias in Recommender Systems:\\ A Methodology for Learning, Analyzing, and Mitigating Bias in Ratings}
 
 \linespread{0.95}%
 \setlength{\belowdisplayskip}{2pt} \setlength{\belowdisplayshortskip}{2pt}
@@ -95,7 +95,11 @@
 % without further effort on your part as the last section in
 % the body of your article BEFORE References or any Appendices.
 
-\numberofauthors{3} %  in this sample file, there are a *total*
+\numberofauthors{1} %  in this sample file, there are a *total*
+\author{ Sanjay Krishnan, Jay Patel, Michael J. Franklin, Ken Goldberg\\
+\affaddr{Department of Electrical Engineering and Computer Sciences, UC Berkeley} \\
+\email{\{sanjaykrishnan, patel.jay, franklin, goldberg\}@berkeley.edu}\\
+}
 % of EIGHT authors. SIX appear on the 'first-page' (for formatting
 % reasons) and the remaining two appear in the \additionalauthors section.
 %\author{Sanjay Krishnan,Jay Patel,Ken Goldberg}
@@ -108,19 +112,16 @@
 
 \maketitle
 \begin{abstract}
-Almost all recommender systems display aggregate statistics before participants enter ratings.
-These statistics can bias a participant's decision and is known as Social Influence Bias.
-We explore this bias in a new platform, the California Report Card (CRC), which reveals the median values to participants after they assign ratings, and allows them to modify their ratings.
-We hypothesized that this will lead to revised ratings closer to the revealed median.
-We develop a non-parametric significance testing framework based on the Wilcoxon rank-sum statistic to test this hypothesis, and compare our results to a randomized SurveyMonkey survey asking the same questions as the CRC. 
-We learn a predictive model relating a participant's initial rating, the observed median, and the rating change, using a polynomial regression technique and Bayesian Information Criterion optimal model search.
-Our results suggest statistically significant movement towards the median value for the particpants who changed their ratings.
-We learned the optimal polynomial model on ratings for six questions, four of which were modeled with linear functions.
-The two remaining questions, about the implementation of Obamacare and Same-sex Marriage Rights in California, were modeled as quadratic functions with significantly higher downward tendency for ratings higher than the median.
-We applied the predictive model to infer initial ratings from finals ones and showed that could ``correct" the rating distribution by 76.3\%.
-The CRC, our data, and experimental code can be found at:
-http://californiareportcard.org
-https://github.com/BerkeleyAutomation/socialInfluence
+In almost all recommender systems, participants see aggregate statistics, such as a mean or median rating, before they enter a rating of their own.
+The bias introduced by the aggregate statistic is known as social influence bias, may encourage participants to conform to what they perceive as the ``norm" in the community.
+We explore social influence bias in a new recommender system, the California Report Card (CRC).
+The CRC is a two phase recommender system: the first phase collects participant ratings on six political issues to determine the similarity between participants, and a second phase uses the similarity to rank open-ended suggestions in a political discussion.
+In this paper, we focus on rating data from the first phase, in which participants see the median value \emph{after} they assign initial ratings, and then have the opportunity to revise their ratings.
+We develop a non-parametric significance test based on the Wilcoxon rank-sum statistic to test the social influence bias hypothesis which accounts for the natural tendency for ratings to concentrate around the median value and that median value changes as more data is collected; concluding a statistically significant bias exists in the CRC.
+We also learn a model that predicts a participant's rating change from his or her initial rating using a polynomial regression and the Bayesian Information Criterion (BIC).
+We show how our polynomial BIC model can be inverted to mitigate the effects of the bias by inferring initial ratings from final ones, and in the CRC, we were able to mitigate the magnitude of the bias by 76.3\%.
+The CRC, our data, and experimental code can be found at:\\
+http://californiareportcard.org/data/
 \end{abstract}
 
 % A category with the (minimum) three required fields
@@ -149,7 +150,7 @@ https://github.com/BerkeleyAutomation/socialInfluence
 % produce the bibliography for the citations in your paper.
 {
 \bibliographystyle{abbrv}
-\fontsize{7.1pt}{7.0pt} \selectfont
+\fontsize{7.0pt}{6.9pt} \selectfont
 \bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
 }
 % You must have a proper ".bib" file

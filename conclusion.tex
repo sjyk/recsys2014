@@ -1,28 +1,21 @@
 \section{Future Work}
 The study of social influence in the CRC has several interesting directions for future work.
 We would like to run user studies comparing a control group that did not see the median grade, 
-a treatment group who saw an incorrect median grade, and testing for the effect of an increased delay in revealing the median grade.
-Such a study would shed light on the complexities and nuances of social influence in rating systems.
+a treatment group who saw an incorrect median grade (as in the Asch experiments), and test the effect of an increased delay in revealing the median grade.
+We believe that the results from such a study would help inform the design of rating systems.
  
 We also want to extend our work to quantify the role of social influence in textual data. 
-The California Report Card collects textual suggestions from participants in addition to the quantitative assessment results. 
+The California Report Card collects textual suggestions from participants in addition to the quantitative ratings on political issues. 
 Participants are encouraged to read the responses of others before leaving a suggestion of their own.
 We suspect that this may lead to a bias in the topics discussed by participants, and we would like to explore how similar non-parametric models can be extended to textual data.
 We hypothesize that unlike this work, participants may try to differentiate their ideas from ones they have already ready.
 \section{Conclusion}
-Revealing aggregate statistics is a common feature of almost all rating systems.
-We studied a new platform, the California Report Card, which revealed the median rating after participants left their own rating.
-Participants had the opportunity to change their ratings after seeing the median for the population.
-We proposed non-parametric hypothesis tests based on the Wilcoxon rank-sum test to determine whether or not revealing the median encouraged participants to move towards the median grade.
-Comparing the data to a randomized reference suvery, we found that changed grades were statistically significantly closer to the median.
-We modeled these changes with polynomial function, whose degree we chose optimally using the Bayes Information Criterion. 
-We found that this relationship was linear in four out of the six issues.
-For remaining two issues, we found that the negative bias, the downward tendency for participants who graded higher than the median, was much stronger than the positive bias.
+Participants in almost all recommender systems see mean, median, or other aggregate statistics before leaving their own ratings.
+We studied whether seeing the median rating would bias participants towards leaving grades closer to the median in a new platform, the California Report Card, which allows participants to revise their ratings after seeing the median value.
+In the CRC, we found that not only did 35\% of participants revise their grades, but those revisions were significantly directed towards the median grade.
+We modeled these changes with polynomial function, whose degree we chose optimally using the Bayes Information Criterion.
+We showed how this model could not only accurately predict final grades given an initial grade and the observed median, but also could be inverted to infer a intial grade from a final one; mitigating the effects of social influence bias.
+Few existing tools collect pairs of ratings, and our results suggest that the pairs give valuable insight about initial ``unbiased" perceptions, the magnitude of social influence, and can train for accurate corrective models for use on past data.
+Our tests for determining the existence of social influence and predicting its effects can help inform the design of recommendation systems through better tuned similarity measures of participants.
 
-Few existing tools collect both an initial (with an aggregate hidden) and a final rating.
-Our analysis of the California Report Card data revealed insights the behavior of participants under social influence. 
-The motivation for a non-parametric approach was to minimize assumptions about the distribution of ratings.
-Recommender and rating systems use a variety of different input techniques eg. sliders, stars, drop-down menus etc., all with their own biases and data distributions.
-Our tests for determining the existence of social influence and predicting its effects can help inform the design of recommendation systems through better tuned kernel function.
-While we found that effects social influence bias was complex and varied question to question, we are encouraged by our results since they suggest that we can model and predict the influence process accurately.
 

@@ -1,5 +1,5 @@
-\section{Social Influence Test}\label{ht}
-In this section, we test \textbf{Hypothesis 1}, by analyzing spread of grades around the median grade for the participants that changed their grades.
+\section{Social Influence Bias Test}\label{ht}
+In this section, we test \textbf{Hypothesis 1} by analyzing spread of grades around the median grade for the participants that changed their grades.
 There are three principle challenges in testing this hypothesis.
 The first challenge is that parametric significance tests comparing two sample means such as the two sample t-test and z-test are known to 
 perform poorly for multimodal and discrete distributions.
@@ -14,13 +14,13 @@ We can model the first grade that the participant leaves as uniformly randomly a
 As the participant begins to understand how to use the slider their use becomes more accurate, ultimately settling on a grade from our observed distribution of final grades.
 This model, the first grade is uniformly random and the second grade is a sample from the observed distribution, would result in a strong regression towards the median; even if there is no causal link with seeing the median.
 
-Finally, the median grade $m_i$ can be different for each participant.
+Finally, the median grade $m_i$ changes as grades arrive and can be different for each participant.
 The median grade is calculated over all prior participants and thus is dependent on when the participant submitted their first grade.
 In practice, the median will eventually converge for a large number of participants, but it would be incorrect to measure concentration around a final median.
 
 To address these three challenges, we propose a nonparametric model based on the Wilcoxon statistic to test the hypothesis that the group of participants that changed their grades are more tightly centered around the median grade that the participants observed.
-Our tests compare absolute deviations around the median for $P_n$, $P_c$, and $R$; which, as a relative comparision, controls for the natural tendency for grades group around the median.
-Furthermore, it is more robust to the effects of alternate models such as the one described in our second challenge in comparision to a direct test of correlation.
+Our tests compare absolute deviations around the median for $P_n$, $P_c$, and $R$; which, as a relative comparison, controls for the natural tendency for grades group around the median.
+Furthermore, it is more robust to the effects of alternate models such as the one described in our second challenge in comparison to a direct test of correlation (see Section \ref{exp-robust}).
 
 \subsection{Non-parametric Significance Test}
 Recall that $P_n$ is the set of participants that did not change their grades and $P_c$ be the set of participants that changed their grades.
@@ -31,7 +31,7 @@ X_c = \{|m[j] - g_f[j]|\}\text{ }\forall j \in P_c
 \begin{equation}
 X_n = \{|m[j] - g_f[j]|\}\text{ }\forall j \in P_n
 \end{equation}
-For the purposes of hypothesis testing herding behavior, we ignore the sign of the deviation.
+For the purposes of hypothesis testing, we ignore the sign of the deviation.
 However, in Section \ref{changemod}, where we build a predictive model for the changes, we include the sign.
 
 Now, for the set $X_c$, we calculate the Wilcoxon rank-sum statistic.
@@ -64,9 +64,9 @@ X_c' = \{|m[j] - g_i[j]|\}\text{ }\forall j \in P_c
 \end{equation}
 
 \subsection{Quantifying Concentration of Grades}
-In addition to testing the hypothesis, we can also estimate by how much the absolute deviations smaller. 
+In addition to testing the hypothesis, we can also estimate by how much the absolute deviations differ. 
 We tested the significance of the absolute deviations using a Wilcoxon test statistic.
-The Wilcoxon statistic can be inverted to estimate a most likely \emph{shift parameter}, that a shift $\Delta$ in the distribution of absolute deviations $X_c$ that maximally aligns them with $X_n$ (ie. $X_c + \Delta$ is most supported by the null hypothesis). 
+The Wilcoxon statistic can be inverted to estimate a most likely \emph{shift parameter} $\Delta$, that is a shift $\Delta$ in the distribution of absolute deviations $X_c$ that maximally aligns them with $X_n$ ($X_c + \Delta$ is most supported by the null hypothesis). 
 Since $X_c$ is a set of absolute deviations, $\Delta$ tells us how much more concentrated $X_c$ is than $X_n$ around the observed medians.
 This parameter is relevant to the design of recommendation algorithms use proximity (eg. clustering or nearest neighbors).
 

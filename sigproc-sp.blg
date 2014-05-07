@@ -7,45 +7,45 @@ Warning--empty journal in bikhchandani2000herd
 Warning--empty journal in jian2012incentive
 Warning--empty journal in siposreview
 Warning--empty year in siposreview
-You've used 29 entries,
+You've used 30 entries,
             2118 wiz_defined-function locations,
-            679 strings with 8629 characters,
-and the built_in function-call counts, 9693 in all, are:
-= -- 987
-> -- 383
-< -- 9
-+ -- 154
-- -- 122
-* -- 644
-:= -- 1576
-add.period$ -- 90
-call.type$ -- 29
-change.case$ -- 143
+            681 strings with 8866 characters,
+and the built_in function-call counts, 10470 in all, are:
+= -- 1084
+> -- 395
+< -- 10
++ -- 159
+- -- 126
+* -- 680
+:= -- 1666
+add.period$ -- 96
+call.type$ -- 30
+change.case$ -- 148
 chr.to.int$ -- 0
-cite$ -- 33
-duplicate$ -- 391
-empty$ -- 789
-format.name$ -- 122
-if$ -- 2054
+cite$ -- 34
+duplicate$ -- 434
+empty$ -- 859
+format.name$ -- 126
+if$ -- 2255
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 33
-newline$ -- 147
-num.names$ -- 58
-pop$ -- 157
+int.to.str$ -- 30
+missing$ -- 34
+newline$ -- 152
+num.names$ -- 60
+pop$ -- 170
 preamble$ -- 1
-purify$ -- 118
+purify$ -- 122
 quote$ -- 0
-skip$ -- 282
+skip$ -- 320
 stack$ -- 0
-substring$ -- 682
-swap$ -- 90
-text.length$ -- 9
+substring$ -- 764
+swap$ -- 118
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
+type$ -- 112
 warning$ -- 4
-while$ -- 104
-width$ -- 31
-write$ -- 314
+while$ -- 112
+width$ -- 32
+write$ -- 327
 (There were 4 warnings)
