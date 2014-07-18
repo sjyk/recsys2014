@@ -57,17 +57,33 @@
 \usepackage[skip=1pt,font=bf]{caption}
 \special{papersize=8.5in,11in}
 
-\makeatletter
-\def\@copyrightspace{\relax}
-\makeatother
+
+%\makeatletter
+%\def\@copyrightspace{\relax}
+%\makeatother
+
+\newfont{\mycrnotice}{ptmr8t at 7pt}
+\newfont{\myconfname}{ptmri8t at 7pt}
+\let\crnotice\mycrnotice%
+\let\confname\myconfname%
+
+\permission{Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or corecsysercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org.}
+\conferenceinfo{RecSys'14,}{October 6--10, 2014, Foster City, Silicon Valley, CA, USA. \\
+{\mycrnotice{Copyright is held by the owner/author(s). Publication rights licensed to ACM.}}}
+\copyrightetc{ACM \the\acmcopyr}
+\crdata{ACM 978-1-4503-2668-1/14/10\$15.00}
+
+\clubpenalty=10000 
+\widowpenalty = 10000
 
 \begin{document}
 
 \title{Social Influence Bias in Recommender Systems:\\ A Methodology for Learning, Analyzing, and Mitigating Bias in Ratings}
 
-\linespread{0.95}%
+\linespread{0.955}%
 \setlength{\belowdisplayskip}{2pt} \setlength{\belowdisplayshortskip}{2pt}
 \setlength{\abovedisplayskip}{2pt} \setlength{\abovedisplayshortskip}{2pt}
+\setlength{\belowcaptionskip}{-10pt}
 \selectfont
 
 %
@@ -112,14 +128,27 @@
 
 \maketitle
 \begin{abstract}
-In almost all recommender systems, participants see aggregate statistics, such as a mean or median rating, before they enter a rating of their own.
-The bias introduced by the aggregate statistic is known as social influence bias, may encourage participants to conform to what they perceive as the ``norm" in the community.
-We explore social influence bias in a new recommender system, the California Report Card (CRC).
-The CRC is a two phase recommender system: the first phase collects participant ratings on six political issues to determine the similarity between participants, and a second phase uses the similarity to rank open-ended suggestions in a political discussion.
-In this paper, we focus on rating data from the first phase, in which participants see the median value \emph{after} they assign initial ratings, and then have the opportunity to revise their ratings.
-We develop a non-parametric significance test based on the Wilcoxon rank-sum statistic to test the social influence bias hypothesis which accounts for the natural tendency for ratings to concentrate around the median value and that median value changes as more data is collected; concluding a statistically significant bias exists in the CRC.
-We also learn a model that predicts a participant's rating change from his or her initial rating using a polynomial regression and the Bayesian Information Criterion (BIC).
-We show how our polynomial BIC model can be inverted to mitigate the effects of the bias by inferring initial ratings from final ones, and in the CRC, we were able to mitigate the magnitude of the bias by 76.3\%.
+
+To facilitate browsing and selection, almost all recommender systems
+display average ratings before participants rate.  
+This can bias ratings and is called Social Influence Bias (SIB); 
+the tendency for individuals to conform to what they perceive as the 
+``norm" in a community.
+We propose a methodology to 1) learn, 2) analyze, and 3) mitigate the effect of
+SIB in recommender systems.  In the Learning phase,
+we build a baseline dataset with an initial set of participants
+by allowing them to rate twice: before seeing the average rating,
+and after seeing it.  
+In the Analysis phase, we apply a new non-parametric significance test based on the Wilcoxon statistic to
+test whether the data is consistent with SIB.  
+If significant, we propose a Mitigation phase using polynomial regression
+and the Bayesian Information Criterion (BIC) to predict unbiased ratings.
+As a case study, we evaluate our approach on a dataset of 9390 ratings from the California Report
+Card (CRC), a new recommender system that encourages political
+engagement.
+We found statistically significant evidence of SIB, and mitigating models 
+were able to predict changed ratings with a normalized RMSE of 12.8\% and 
+reduce bias by 76.3\%.
 The CRC, our data, and experimental code can be found at:\\
 http://californiareportcard.org/data/
 \end{abstract}
@@ -132,12 +161,12 @@ http://californiareportcard.org/data/
 %\terms{Theory}
 
 %\keywords{ACM proceedings, \LaTeX, text tagging} % NOT required for Proceedings
-
+\sloppy
 \input{introduction.tex}
 \input{related_work.tex}
 \input{crc_description.tex}
 \input{significance_model.tex}
-\input{path_model.tex}
+%\input{path_model.tex}
 \input{change_model.tex}
 \input{results.tex}
 \input{conclusion.tex}
@@ -150,7 +179,7 @@ http://californiareportcard.org/data/
 % produce the bibliography for the citations in your paper.
 {
 \bibliographystyle{abbrv}
-\fontsize{7.0pt}{6.9pt} \selectfont
+\fontsize{7.3pt}{7.5pt} \selectfont
 \bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
 }
 % You must have a proper ".bib" file

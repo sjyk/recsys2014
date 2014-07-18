@@ -1,48 +1,155 @@
 \section{Introduction}
-In Asch's famous conformity experiments \cite{asch1956studies, asch1955opinions, bond1996culture}, groups of participants were asked to match a line with a set of three different sized lines, one of which was of the correct size.
-In reality, only one of the participants was ``real" and the others were actors who unanimously chose an incorrect choice.
-On average, 25\% of participants conformed to the incorrect consensus compared to 1\% of incorrect answers in a control group.
-Bias in rating systems which arise from feedback from the actions of other participants are known as \emph{Social Influence Bias} \cite{demarzo2003persuasion, moscovici1972social, wood2000attitude}.
-Similar to the Asch experiment, we explore the tendency for participants to conform in recommender systems, where feedback from the community encourages future participants to enter ratings closer to what they perceive as the ``norm" \cite{banerjee1992simple}.
+
+In the 1950's, Solomon Asch performed a well-known series of experiments 
+\cite{asch1956studies, asch1955opinions, bond1996culture} where
+subjects were asked to choose which of a set of lines matched the
+length of a reference line.  
+When working in private, only 1\% of choices were incorrect.  
+But when answering in the presence of a group of confederates who agreed on incorrect answers, 25\% of participants
+conformed to the incorrect consensus.  
+These results were widely repeated to confirm what is now known as \emph{social influence bias}:
+the tedency for participants to conform with the perceived community ``norm" \cite{demarzo2003persuasion,
+moscovici1972social, wood2000attitude}.
+
+In almost all recommender systems, participants see the community ``norm" in the form of 
+aggregate statistics (the average or median rating values) before leaving a rating of their own;
+potentially introducing social influence bias into the rating data.
+This interface paradigm is, of course, reasonable to facilitate browsing and selection in a large lists of items.
+For example, online retailers such as Amazon display the average rating value
+for products and Netflix displays the average rating value of movies
+(Figure \ref{grading-0}).  Display of average ratings values can also be
+used as an incentive\cite{jian2012incentive} to reveal information about
+peers after a participant enters his or her own grade.  
+Display of statistics also increases the perceived transparency of open democracy platforms that encourage political engagement
+\cite{albors2008new,o2012transparency,noveck2008wiki}.
 
 \begin{figure}[t]
   \centering
-    \includegraphics[scale=0.27]{../plots/intro.png}
-      \caption{Multi-valued recommender systems (eg. Amazon and Netflix) are commonly used and often display aggregate statistics. The CRC is unique as it reveals the median value only after participants leave a rating and allows a participant to change his or her rating.}
+    \includegraphics[scale=0.36]{../plots/intro2.png}
+      \caption{Typical displays of aggregate statistics (the average/mean or median rating value) in Amazon, Netflix, and the California Report Card
+that can lead to social influence bias.}
       \label{grading-0}
 \end{figure}
 
-Participants in almost all recommender systems encounter results derived from the ratings of others.
-For example, online retailers show the average rating for a product before a participant shares his or her rating (Figure \ref{grading-0}), and Netflix displays a personalized ``guess" for a participant's rating for an unseen movie.
-Displaying the mean or median rating is desirable for browsing/selection.
-Additionally, the use of social content is an established user experience design technique to incentivize participation\cite{jian2012incentive, shneiderman1992designing}, where participants are encouraged to enter more information to so they can learn more about their peers.
-Furthermore, an application of particular interest is online participatory democracy where displaying results increases the transparency of the system \cite{albors2008new,o2012transparency,noveck2008wiki}.
+Susceptibility to influence has been studied in the context recommender systems \cite{cosley2003seeing}, and, in particular, Cosley et al. explored
+different rating scenarios and how system-generated rating predictions may influence participant ratings.
+They found that in a variety of scenarios including presenting manipulated predictions, presenting predictions on already rated items, and changing the rating scale had statistically significant influence on participants ratings.
+These results motivate a study of social influence bias in recommender systems which, in contrast, can arise organically from the community rather than
+from a prompt from the system, such as a prediction.
+Conformity can yield ratings that are closer to the average, less diverse, and less representative of participants' true
+evaluations for items, which can in turn affect similarity measures between items and users.  
 
-We study social influence bias using a new platform, the California Report Card (CRC).
-The CRC is a two phase recommender system: in the first phase participants enter ratings (on a 13-point scale) for six political issues, and in the second participants join a textual discussion where they read and rate the comments of others.
-Phase two is a typical recommender system that uses participant ratings to build a reputation model that quickly identifies insightful comments.
-Phase one is also a recommender system as it uses the six ratings to quantify similarity between participants.
-The CRC has a unique rating interface that reveals median values to participants only \emph{after} they leave a rating, and then allows participants to revise ratings.
-We study social influence bias in this platform, especially since tendency to conform will affect our measure of similarity between participants in phase one.
-For comparison with the CRC, we ran a reference survey through SurveyMonkey with same political questions, but without displaying the median value, and it was given to a random sample of 611 participants from the company's paid pool of California participants.
-To minimize assumptions about the statistical distribution of ratings, we develop a non-parametric approach to test the following social influence hypotheses:
+In this paper, we propose a methodology to learn, analyze, 
+and mitigate the effects of social influence bias in recommender systems.  
+As a case study, we evaluate our methodology on a new recommender system, the 
+California Report Card (CRC).
+In the CRC, participants assign ratings (letter grades A+ to F, a 13 point
+scale) to the State of California on six political issues.  
+Then, the CRC uses the ratings to place participants in a open-ended
+political discussion with an initial set of comments from those who 
+rated the state most similarly.
+Conformity ratings of the state can degrade the performance of the ``recommendation", 
+a set of comments from like-minded participants.
 
-\noindent \textbf{- Hypothesis 0} Given the opportunity, participants will revise their ratings.
+However, the CRC has novel interface that allows us to learn the effects of Social Influence Bias.
+The CRC interface reveals median grade values to participants \emph{after} they enter
+their own rating and then allows participants to revise their
+rating.
+The key insight is that the combination of initial and revised ratings
+pairs allows us to determine if the social influence bias is
+statistically significant, and if so, can be used to build an
+inference model that can predict the biasing tendency; thus mitigate the bias 
+in a dataset of already biased ratings.  
 
-\noindent \textbf{- Hypothesis 1} When a participant does change a rating it will be in the direction that conforms to the presented median.
+Our methodology has three main components:
+\vspace{1em}
 
-\noindent \textbf{- Hypothesis 2} Participants will become more moderate in their ratings if they observe that their ratings consistently are in disagreement with the population consensus.
+\noindent \textbf{Learn} To initialize with baseline data, an initial
+``learning" phase asks an initial set of participants to rate a set of
+items twice: before seeing the median rating, and again after the
+median is revealed.  This collects triplets of ratings for each
+participant (initial rating, median rating, and final rating).
 
-Nearly 35\% of participants changed at least one rating, and our study finds statistically significant effects of social influence bias in the $862$ out of $9390$ ratings which were changed after participant's saw the median value.
-To further model patterns of participant behavior, we train a polynomial regression with the Bayesian Information Criterion (BIC) that predicts rating changes given a participant's current rating.
-The model can also be inverted to infer initial ratings from final ones.
-Prior results in social influence bias have focused on binary rating systems eg. up or down votes \cite{muchnik2013social, zhu2012switch}.
-However, these models are not directly applicable in many recommender systems which often have discrete mutli-valued rating scales (eg. 5 stars).
+\vspace{1em}
 
-Our results, which especially focus on mutli-valued ratings, have the following implications for interface and algorithmic design in recommender systems.
-Few existing tools collect both an initial (with the mean/median hidden) and a final rating.
-As seen in the CRC, given the opportunity to revise ratings, many participants will, and it can be informative to collect the pairs of ratings.
-The pairs can reveal more information about participants' initial perceptions, allow us to classify participants as likely to conform/deviate, and also assess the magnitude of social influence from the community.
-Almost all recommendation algorithms rely on an accurate characterization of participant similarity and our results suggest that social influence bias can significantly affect similarity metrics.
-Existing recommender systems, can use our models to mitigate these effects, by training on set of rating pairs collected after-the-fact, and then applying the model to infer past participant's ``unbiased" ratings.
+\noindent \textbf{Analyze} Given these triplets, we propose a new
+nonparametric significance test based on the Wilcoxon statistic to
+determine whether ratings that were changed are significantly closer
+to the median, i.e. the degree of social influence bias for each item.
+
+\vspace{1em}
+
+\noindent \textbf{Mitigate} Using the Bayesian Information Criterion
+(BIC), we learn a polynomial function of optimal degree that estimates
+the initial rating from the final rating and the median. This can be
+used in a post-learning phase (when medians are always visible), or on
+historical ratings, to estimate what a participant's rating would be
+without social influence bias.
+
+\vspace{1em}
+
+A key priority is a nonparametric approach to modeling 
+social influence bias. Many earlier studies of social influence
+bias have focused on binary ratings (eg. up or down) \cite{muchnik2013social, zhu2012switch}.  
+However, recommender systems often have multi-valued rating scales (eg. 5 stars), 
+and parametric significance tests (eg. t-test and $\chi^2$ test), as used in
+\cite{cosley2003seeing}, often have poor performance in this setting.
+We further show how model-search methods such as BIC can be used to model
+possible Social Influence Bias without having to make a strong assumption 
+about structure of the bias (eg. linear, conforming vs. contrarian).
+
+%estimate
+%unbiased ratings and present results with data from the California
+%Report Card, including learning curves that show that in most cases
+%estimation converges relatively quickly.  Applying the proposed
+%methodology to existing recommender systems raises a number of interesting
+%questions for further research.
+
+%In our case study, we apply this methodology to the California Report
+%Card (CRC), a two-part recommender system that encourages political
+%engagement.  In Part I, participants assign letter grades (a 13-point
+%rating scale) to the state of California on six political issues.
+%Part I uses the six ratings to quantify similarity between
+%participants and issues.  In Part II, participants enter textual
+%suggestions about new political issues and grade the suggestions of
+%other participants.  Part II uses participant ratings to identify
+%(recommend) valuable suggestions.  The CRC was announced via press and
+%social media in late January 2014.
+
+Results to date from the CRC suggest that given the opportunity, many
+participants will revise their grades/ratings: $862$ out of $9390$
+ratings were changed after participants saw the median value.  We
+found statistically significant effects of social influence bias, with
+ratings on average 19.3\% closer to the median value than ratings that
+were not changed.  We also conducted an independent reference survey
+using SurveyMonkey to ask a random sample of 611 participants from the
+company's paid pool of California participants to grade the same set
+of issues without displaying the median values.  This data did not
+exhibit the same clustering around the median as the CRC, which
+comparably had ratings that were statistically significantly closer to
+the median (12.0\%), suggesting that social influence bias is an
+important factor.
+
+%We study social influence bias in this platform, especially since tendency to conform will affect our measure of similarity between participants in phase one.
+
+%To minimize assumptions about the statistical distribution of ratings, we develop a non-parametric approach to test the following social influence hypotheses:
+
+%\noindent \textbf{- Hypothesis 0} Given the opportunity, participants will revise their ratings.
+
+%\noindent \textbf{- Hypothesis 1} When a participant does change a rating it will be in the direction that conforms to the presented median.
+
+%\noindent \textbf{- Hypothesis 2} Participants will become more moderate in their ratings if they observe that their ratings consistently are in disagreement with the population consensus.
+
+%Nearly 35\% of participants changed at least one rating, and our study finds statistically significant effects of social influence bias in the $862$ out of $9390$ ratings which were changed after participant's saw the median value.
+%To further model patterns of participant behavior, we train a polynomial regression with the Bayesian Information Criterion (BIC) that predicts rating changes given a participant's current rating.
+%The model can also be inverted to infer initial ratings from final ones.
+%Prior results in social influence bias have focused on binary rating systems eg. up or down votes \cite{muchnik2013social, zhu2012switch}.
+%However, these models are not directly applicable in many recommender systems which often have discrete mutli-valued rating scales (eg. 5 stars).
+
+%Our results, which especially focus on mutli-valued ratings, have the following implications for interface and algorithmic design in recommender systems.
+%Few existing tools collect both an initial (with the mean/median hidden) and a final rating.
+%As seen in the CRC, given the opportunity to revise ratings, many participants will, and it can be informative to collect the pairs of ratings.
+%The pairs can reveal more information about participants' initial perceptions, allow us to classify participants as likely to conform/deviate, and also assess the magnitude of social influence from the community.
+
+%Existing recommender systems, can use our models to mitigate these effects, by training on set of rating pairs collected after-the-fact, and then applying the model to infer past participant's ``unbiased" ratings.
 

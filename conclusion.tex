@@ -1,21 +1,24 @@
-\section{Future Work}
-The study of social influence in the CRC has several interesting directions for future work.
-We would like to run user studies comparing a control group that did not see the median grade, 
-a treatment group who saw an incorrect median grade (as in the Asch experiments), and test the effect of an increased delay in revealing the median grade.
-We believe that the results from such a study would help inform the design of rating systems.
- 
-We also want to extend our work to quantify the role of social influence in textual data. 
-The California Report Card collects textual suggestions from participants in addition to the quantitative ratings on political issues. 
-Participants are encouraged to read the responses of others before leaving a suggestion of their own.
-We suspect that this may lead to a bias in the topics discussed by participants, and we would like to explore how similar non-parametric models can be extended to textual data.
-We hypothesize that unlike this work, participants may try to differentiate their ideas from ones they have already ready.
-\section{Conclusion}
-Participants in almost all recommender systems see mean, median, or other aggregate statistics before leaving their own ratings.
-We studied whether seeing the median rating would bias participants towards leaving grades closer to the median in a new platform, the California Report Card, which allows participants to revise their ratings after seeing the median value.
-In the CRC, we found that not only did 35\% of participants revise their grades, but those revisions were significantly directed towards the median grade.
-We modeled these changes with polynomial function, whose degree we chose optimally using the Bayes Information Criterion.
-We showed how this model could not only accurately predict final grades given an initial grade and the observed median, but also could be inverted to infer a intial grade from a final one; mitigating the effects of social influence bias.
-Few existing tools collect pairs of ratings, and our results suggest that the pairs give valuable insight about initial ``unbiased" perceptions, the magnitude of social influence, and can train for accurate corrective models for use on past data.
-Our tests for determining the existence of social influence and predicting its effects can help inform the design of recommendation systems through better tuned similarity measures of participants.
+\section{Conclusion and Future Work}
+These results suggest that social influence bias can be significant in
+recommender systems and that this bias can be substantially reduced
+with machine learning. 
+To apply this methodology to other recommender systems, a key question
+for future work is how is how to extend the approach to other recommender systems.
+We see an opportunity for this methodology in systems that combine their browsing and rating interfaces.
+For example, after selection, ie. users purchase a product, click on a movie, etc. the rating can be hidden.
+Once the user is ready to rate the item, which can be significant time after selection, we can reveal the average rating again after they have assigned a rating of their own. 
+Then, we can apply our methodology to learn, analyze, and mitigate bias in the recommender systems.
+
+An open question is how to extend this work to large item inventories and how much training data is required in such cases.  
+One idea is to cluster/classify items into a small number of representative categories and train a model for each category.  
+We believe that selecting an optimal set of items for training in this context may be posed as a submodular maximization problem.  
+We are looking at applying this methodology to recommender systems in other domains (eg. movies) with alternative regression methods, such as Gaussian Process Regression and LOESS.
+We are also interested in performing more user studies where a false median is presented (as in the Asch experiments) and exploring methods to
+optimally classify participants as conformers and non-conformists.  
+We would also like to study and quantify the role of social influence on textual data.\\[1\baselineskip]
+\scriptsize
+\textbf{We would like to thank the UC Berkeley AMPLab and the UC CITRIS Data and Democracy Initiative for supporting this project. We also thank Brandie Nonnecke, Allen Huang, Camille Crittenden, John Scott, Tanja Aitamurto, Daniel Catterson, Matti Nelimarkka, Henry Brady, and Lt. Governor Gavin Newsom for their work on the CRC project. This AMPLab is supported in part by NSF CISE Expeditions Award CCF-1139158, LBNL Award 7076018, and DARPA XData Award FA8750-12-2-0331, and  gifts from Amazon Web Services, Google, SAP,  The Thomas and Stacey Siebel Foundation, Apple, Inc., C3Energy, Cisco, Cloudera, EMC, Ericsson, Facebook, GameOnTalis, Guavus, HP, Huawei, Intel, Microsoft, NetApp, Pivotal, Splunk, Virdata, VMware, WANdisco and Yahoo!.}
+
+
 
 
