@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 JUL 2014 23:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  22 JUL 2014 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -532,42 +532,36 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 129.
 
-Overfull \hbox (2.66203pt too wide) in paragraph at lines 132--155
-\T1/aer/m/n/9 sys-tems dis-play av-er-age rat-ings be-fore par-tic-i-pants rate
-. This
- []
-
-(./introduction.tex <../plots/intro2.png, id=1, 350.30875pt x 402.50375pt>
+(./introduction.tex <../plots/intro2.png, id=1, 348.30125pt x 227.85126pt>
 File: ../plots/intro2.png Graphic file (type png)
 
 <use ../plots/intro2.png>
-Package pdftex.def Info: ../plots/intro2.png used on input line 28.
-(pdftex.def)             Requested size: 126.11105pt x 144.90123pt.
+Package pdftex.def Info: ../plots/intro2.png used on input line 22.
+(pdftex.def)             Requested size: 240.0pt x 157.00197pt.
 
-Underfull \vbox (badness 6792) has occurred while \output is active []
+Underfull \vbox (badness 4048) has occurred while \output is active []
 
  [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 Non-PDF special ignored!
 
- <../plots/intro2.png>]) (./related_work.tex)
-(./crc_description.tex
+ <../plots/intro2.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-<../plots/grading-desc-1.png, id=22, 391.7034pt x 197.0562pt>
+)
+(./related_work.tex [2]) (./crc_description.tex
+<../plots/grading-desc-1.png, id=20, 391.7034pt x 121.8954pt>
 File: ../plots/grading-desc-1.png Graphic file (type png)
 
 <use ../plots/grading-desc-1.png>
 Package pdftex.def Info: ../plots/grading-desc-1.png used on input line 17.
-(pdftex.def)             Requested size: 156.67857pt x 78.82108pt.
-) (./significance_model.tex [3 <../plots/grading-desc-1.png>]) (./change_model.
-tex
-Underfull \vbox (badness 1509) has occurred while \output is active []
+(pdftex.def)             Requested size: 240.0pt x 74.68901pt.
+) (./significance_model.tex [3 <../plots/grading-desc-1.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4])
-(./results.tex
+)
+(./change_model.tex [4]) (./results.tex
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 11.
 Package epstopdf Info: Source file: <../plots/change-1.eps>
@@ -581,7 +575,7 @@ erted-to.pdf ../plots/change-1.eps>
 (epstopdf)             \includegraphics on input line 53.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/change-1-eps-converted-to.pdf, id=36, 1139.25626pt x 326.21875pt>
+<../plots/change-1-eps-converted-to.pdf, id=35, 1139.25626pt x 326.21875pt>
 File: ../plots/change-1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../plots/change-1-eps-converted-to.pdf>
@@ -599,7 +593,7 @@ erted-to.pdf ../plots/change-2.eps>
 (epstopdf)             \includegraphics on input line 55.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/change-2-eps-converted-to.pdf, id=37, 1139.25626pt x 326.21875pt>
+<../plots/change-2-eps-converted-to.pdf, id=36, 1139.25626pt x 326.21875pt>
 File: ../plots/change-2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../plots/change-2-eps-converted-to.pdf>
@@ -626,17 +620,17 @@ Package epstopdf Info: Source file: <../plots/bias-1.eps>
 (epstopdf)                    size: 7855 bytes
 (epstopdf)             Command: <repstopdf --outfile=../plots/bias-1-eps-conver
 ted-to.pdf ../plots/bias-1.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
- <../plots/bias-1-eps-converted-to.pdf, id=53, 1011.78pt x 385.44pt>
+ <../plots/bias-1-eps-converted-to.pdf, id=52, 1011.78pt x 385.44pt>
 File: ../plots/bias-1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../plots/bias-1-eps-converted-to.pdf>
 Package pdftex.def Info: ../plots/bias-1-eps-converted-to.pdf used on input lin
-e 103.
+e 104.
 (pdftex.def)             Requested size: 252.94438pt x 96.35976pt.
 
-Overfull \hbox (12.94438pt too wide) in paragraph at lines 103--104
+Overfull \hbox (12.94438pt too wide) in paragraph at lines 104--105
  [][] 
  []
 
@@ -648,17 +642,17 @@ Package epstopdf Info: Source file: <../plots/bias-2.eps>
 (epstopdf)                    size: 7877 bytes
 (epstopdf)             Command: <repstopdf --outfile=../plots/bias-2-eps-conver
 ted-to.pdf ../plots/bias-2.eps>
-(epstopdf)             \includegraphics on input line 141.
+(epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
-<../plots/bias-2-eps-converted-to.pdf, id=54, 979.66pt x 409.53pt>
+<../plots/bias-2-eps-converted-to.pdf, id=53, 979.66pt x 409.53pt>
 File: ../plots/bias-2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../plots/bias-2-eps-converted-to.pdf>
 Package pdftex.def Info: ../plots/bias-2-eps-converted-to.pdf used on input lin
-e 141.
+e 142.
 (pdftex.def)             Requested size: 244.9144pt x 102.38225pt.
 
-Overfull \hbox (4.9144pt too wide) in paragraph at lines 141--142
+Overfull \hbox (4.9144pt too wide) in paragraph at lines 142--143
  [][] 
  []
 
@@ -671,17 +665,17 @@ Package epstopdf Info: Source file: <../plots/BIC-optimization.eps>
 (epstopdf)                    size: 55187 bytes
 (epstopdf)             Command: <repstopdf --outfile=../plots/BIC-optimization-
 eps-converted-to.pdf ../plots/BIC-optimization.eps>
-(epstopdf)             \includegraphics on input line 190.
+(epstopdf)             \includegraphics on input line 191.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/BIC-optimization-eps-converted-to.pdf, id=55, 1650.165pt x 397.485pt>
+<../plots/BIC-optimization-eps-converted-to.pdf, id=54, 1650.165pt x 397.485pt>
 File: ../plots/BIC-optimization-eps-converted-to.pdf Graphic file (type pdf)
 <use ../plots/BIC-optimization-eps-converted-to.pdf>
 Package pdftex.def Info: ../plots/BIC-optimization-eps-converted-to.pdf used on
- input line 190.
+ input line 191.
 (pdftex.def)             Requested size: 627.06923pt x 151.04587pt.
 
-Overfull \hbox (60.42088pt too wide) in paragraph at lines 189--191
+Overfull \hbox (60.42088pt too wide) in paragraph at lines 190--192
 []  [] 
  []
 
@@ -694,16 +688,16 @@ ted-to.pdf>
 (epstopdf)                    size: 10619 bytes
 (epstopdf)             Command: <repstopdf --outfile=../plots/roc-predicting-ch
 anges-eps-converted-to.pdf ../plots/roc-predicting-changes.eps>
-(epstopdf)             \includegraphics on input line 203.
+(epstopdf)             \includegraphics on input line 204.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/roc-predicting-changes-eps-converted-to.pdf, id=56, 571.13374pt x 427
+<../plots/roc-predicting-changes-eps-converted-to.pdf, id=55, 571.13374pt x 427
 .5975pt>
 File: ../plots/roc-predicting-changes-eps-converted-to.pdf Graphic file (type p
 df)
  <use ../plots/roc-predicting-changes-eps-converted-to.pdf>
 Package pdftex.def Info: ../plots/roc-predicting-changes-eps-converted-to.pdf u
-sed on input line 203.
+sed on input line 204.
 (pdftex.def)             Requested size: 148.49127pt x 111.17271pt.
 
 
@@ -720,15 +714,15 @@ Package epstopdf Info: Source file: <../plots/prediction-error.eps>
 (epstopdf)                    size: 6992 bytes
 (epstopdf)             Command: <repstopdf --outfile=../plots/prediction-error-
 eps-converted-to.pdf ../plots/prediction-error.eps>
-(epstopdf)             \includegraphics on input line 228.
+(epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/prediction-error-eps-converted-to.pdf, id=71, 1026.83624pt x 282.0537
+<../plots/prediction-error-eps-converted-to.pdf, id=70, 1026.83624pt x 282.0537
 6pt>
 File: ../plots/prediction-error-eps-converted-to.pdf Graphic file (type pdf)
  <use ../plots/prediction-error-eps-converted-to.pdf>
 Package pdftex.def Info: ../plots/prediction-error-eps-converted-to.pdf used on
- input line 228.
+ input line 229.
 (pdftex.def)             Requested size: 277.2495pt x 76.15552pt.
 Package epstopdf Info: Source file: <../plots/shit-2.eps>
 (epstopdf)                    date: 2014-05-07 00:57:28
@@ -738,37 +732,39 @@ Package epstopdf Info: Source file: <../plots/shit-2.eps>
 (epstopdf)                    size: 8407 bytes
 (epstopdf)             Command: <repstopdf --outfile=../plots/shit-2-eps-conver
 ted-to.pdf ../plots/shit-2.eps>
-(epstopdf)             \includegraphics on input line 230.
+(epstopdf)             \includegraphics on input line 231.
 Package epstopdf Info: Output file is already uptodate.
 
-<../plots/shit-2-eps-converted-to.pdf, id=72, 1081.03876pt x 276.03125pt>
+<../plots/shit-2-eps-converted-to.pdf, id=71, 1081.03876pt x 276.03125pt>
 File: ../plots/shit-2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../plots/shit-2-eps-converted-to.pdf>
 Package pdftex.def Info: ../plots/shit-2-eps-converted-to.pdf used on input lin
-e 230.
+e 231.
 (pdftex.def)             Requested size: 281.06345pt x 71.76642pt.
 
-Overfull \hbox (20.81567pt too wide) in paragraph at lines 227--231
+Overfull \hbox (20.81567pt too wide) in paragraph at lines 228--232
 []|  []
  []
 
 
-Overfull \hbox (24.62962pt too wide) in paragraph at lines 227--231
+Overfull \hbox (24.62962pt too wide) in paragraph at lines 228--232
 |  [] 
  []
 
+) (./conclusion.tex [7 <../plots/BIC-optimization-eps-converted-to.pdf> <../plo
+ts/roc-predicting-changes-eps-converted-to.pdf> <../plots/prediction-error-eps-
+converted-to.pdf> <../plots/shit-2-eps-converted-to.pdf>]
+Underfull \hbox (badness 1097) in paragraph at lines 12--21
+\T1/aer/m/n/9 look-ing at ap-ply-ing this method-ol-ogy to rec-om-mender
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
+Underfull \hbox (badness 10000) in paragraph at lines 12--21
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ []
 
-)
-(./conclusion.tex [7 <../plots/BIC-optimization-eps-converted-to.pdf> <../plots
-/roc-predicting-changes-eps-converted-to.pdf> <../plots/prediction-error-eps-co
-nverted-to.pdf> <../plots/shit-2-eps-converted-to.pdf>]) (./sigproc-sp.bbl)
-[8] (./sigproc-sp.aux) ) 
+) (./sigproc-sp.bbl) [8] (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
  8127 strings out of 493315
  115384 string characters out of 6137904
@@ -777,30 +773,30 @@ Here is how much of TeX's memory you used:
  75372 words of font info for 107 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,10n,39p,822b,316s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/bas
-e/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9
-.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cm
-ex9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.
-pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/tex
-live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/te
-xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/f
-onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (8 pages, 632924 bytes).
+{/usr/local/texlive/2013/texmf-dis
+t/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+c/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.
+pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sigproc-sp.pdf (8 pages, 557264 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
+ 170 PDF objects out of 1000 (max. 8388607)
  118 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)

@@ -78,12 +78,12 @@
 
 \begin{document}
 
-\title{Social Influence Bias in Recommender Systems:\\ A Methodology for Learning, Analyzing, and Mitigating Bias in Ratings}
+\title{A Methodology for Learning, Analyzing, and Mitigating Social Influence Bias in Recommender Systems}
 
-\linespread{0.955}%
+\linespread{0.945}%
 \setlength{\belowdisplayskip}{2pt} \setlength{\belowdisplayshortskip}{2pt}
 \setlength{\abovedisplayskip}{2pt} \setlength{\abovedisplayshortskip}{2pt}
-\setlength{\belowcaptionskip}{-10pt}
+\setlength{\belowcaptionskip}{-8pt}
 \selectfont
 
 %
@@ -128,28 +128,25 @@
 
 \maketitle
 \begin{abstract}
-
+The seminal 2003 paper by Cosley, Lab, Albert, Konstan, and Reidl, demonstrated the 
+succeptability of recommender systems to rating biases.  
 To facilitate browsing and selection, almost all recommender systems
-display average ratings before participants rate.  
-This can bias ratings and is called Social Influence Bias (SIB); 
-the tendency for individuals to conform to what they perceive as the 
-``norm" in a community.
+display average ratings before accepting ratings from users which has been shown to bias ratings.
+This effect is called Social Influence Bias (SIB); 
+the tendency to conform to the perceived ``norm" in a community.
 We propose a methodology to 1) learn, 2) analyze, and 3) mitigate the effect of
 SIB in recommender systems.  In the Learning phase,
-we build a baseline dataset with an initial set of participants
-by allowing them to rate twice: before seeing the average rating,
-and after seeing it.  
+we build a baseline dataset by allowing users to rate twice: before and after seeing the average rating.  
 In the Analysis phase, we apply a new non-parametric significance test based on the Wilcoxon statistic to
 test whether the data is consistent with SIB.  
 If significant, we propose a Mitigation phase using polynomial regression
 and the Bayesian Information Criterion (BIC) to predict unbiased ratings.
-As a case study, we evaluate our approach on a dataset of 9390 ratings from the California Report
-Card (CRC), a new recommender system that encourages political
-engagement.
-We found statistically significant evidence of SIB, and mitigating models 
-were able to predict changed ratings with a normalized RMSE of 12.8\% and 
+We evaluate our approach on a dataset of 9390 ratings from the California Report Card (CRC), a 
+rating-based system designed to encourage political engagement.
+We found statistically significant evidence of SIB.
+Mitigating models were able to predict changed ratings with a normalized RMSE of 12.8\% and 
 reduce bias by 76.3\%.
-The CRC, our data, and experimental code can be found at:\\
+The CRC, our data, and experimental code are available at:\\
 http://californiareportcard.org/data/
 \end{abstract}
 
@@ -179,7 +176,7 @@ http://californiareportcard.org/data/
 % produce the bibliography for the citations in your paper.
 {
 \bibliographystyle{abbrv}
-\fontsize{7.3pt}{7.5pt} \selectfont
+\fontsize{7.1pt}{7.3pt} \selectfont
 \bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
 }
 % You must have a proper ".bib" file

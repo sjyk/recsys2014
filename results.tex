@@ -55,6 +55,7 @@ On only two of the question (K12 and Immigration), we found a observed differenc
     \includegraphics[scale=.25]{../plots/change-2.eps}
       \caption{Among CRC participants, 65\% changed none of their ratings, 22.0\% changed one rating, 8.6\% changed two, and 6.5\% changed three or more. The lower figure omits those who didn't change and indicates that majority of rating changes were towards the median.}
       \label{change-1}
+      \vspace{2em}
 \end{figure}
 
 \subsection{Analysis}
@@ -188,7 +189,7 @@ We not only found that participants' changed ratings were statistically signific
 \begin{figure*}[ht!]
 \hspace{-7em}
     \includegraphics[scale=0.38]{../plots/BIC-optimization.eps}
-      \caption{For the participants that changed their ratings, we plot the difference between their rating and the median (X-axis), and the change in their rating (Y-axis). We overlay the optimal polynomial model to represent the relationship $f(x) = y$. Below each plot, is the BIC objective function showing how we picked an optimal degree of polynomial.}
+      \caption{We plot the difference between ratings and the median (X-axis), and the change in rating (Y-axis). We overlay the optimal polynomial model to represent the relationship $f(x) = y$. Below each plot, is the BIC objective function showing how we picked an optimal degree of polynomial.}
       \label{opt-1}
 \end{figure*}
 
@@ -201,7 +202,7 @@ In Figure \ref{change-pred-1}, as is typically used to evaluate binary classifie
 \begin{figure}[h]
 \centering
     \includegraphics[scale=0.26]{../plots/roc-predicting-changes.eps}
-      \caption{We show an ROC plot for the logistic regression estimate of the probability the rating has been changed. This plot shows the true positive rate (correct classifications) as a function of the false positive rate. We find that our prediction is quite accurate, substantially better than random (dashed line) with an average AUC score of 0.8670.}
+      \caption{This plot shows the true positive rate (correct classifications) as a function of the false positive rate. We find that our prediction is quite accurate, substantially better than random (dashed line) with an average AUC score of 0.8670.}
       \label{change-pred-1}
 \end{figure}
 The prediction results were quite accurate with average AUC score over all issues of 0.8670.
