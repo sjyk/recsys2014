@@ -99,10 +99,11 @@ We compared the group of participants that did not change their ratings to the g
 We found that while there were no statistically significant differences between the initial ratings of the two groups, the final ratings of the group that changed were statistically significantly more concentrated than both their own initial ratings and the ratings of the no change group.
 On average, the ratings were $19.3\%$ closer to the median in the change group.
 The results of the hypothesis test for the set of participants who changed their ratings $P_c$ and those who did not $P_n$ are (we denote initial grades from $P_c$ as $i$ and final as $f$):
+\vspace{-0.5em}
 \begin{figure}[h]
 \centering
     \includegraphics[scale=0.25]{../plots/bias-1.eps}
-      \caption{For those participants that changed their ratings, final ratings were significantly more concentrated around the median than their initial ratings. In addition, these ratings are more concentrated than the ratings for those who didn't change.}
+      \caption{For those participants that changed their ratings, final ratings were significantly more concentrated around the median than their initial ratings.}
       \label{mdev-1}
 \end{figure}
 
@@ -140,7 +141,7 @@ The results of the hypothesis test for the set of participants who changed their
 \begin{figure}[h]
 \centering
     \includegraphics[scale=0.25]{../plots/bias-2.eps}
-      \caption{We found that final ratings were significantly more concentrated in the CRC compared to ratings in the reference survey. Similar to Figure \ref{mdev-1}, we found that there was no statistically significant difference between the reference survey and the initial ratings.}
+      \caption{We found that final ratings were significantly more concentrated in the CRC compared to ratings in the reference survey, however the reference and the initial ratings did not differ significantly.}
       \label{mdev-2}
 \end{figure}
 
@@ -202,7 +203,7 @@ In Figure \ref{change-pred-1}, as is typically used to evaluate binary classifie
 \begin{figure}[h]
 \centering
     \includegraphics[scale=0.26]{../plots/roc-predicting-changes.eps}
-      \caption{This plot shows the true positive rate (correct classifications) as a function of the false positive rate. We find that our prediction is quite accurate, substantially better than random (dashed line) with an average AUC score of 0.8670.}
+      \caption{The true positive rate (correct classifications) as a function of the false positive rate. Substantially better than random (dashed line) with an average AUC score of 0.8670.}
       \label{change-pred-1}
 \end{figure}
 The prediction results were quite accurate with average AUC score over all issues of 0.8670.
@@ -229,7 +230,7 @@ We found that there was on average a 76.3\% reduction in $\Delta$ for the entire
     \includegraphics[scale=0.27]{../plots/prediction-error.eps}
     \hspace*{-2em}
     \includegraphics[scale=0.26]{../plots/shit-2.eps}
-      \caption{We measured the RMSE prediction error of the polynomial model. We found that we could predict changes in all of the issues with less than 2/3 of a letter grade RMSE error. In the lower figure, we applied this model to correct for the social influence bias and found that, on average, we could reduce the effects by 76.3\%}
+      \caption{We found that we could predict changes in all of the issues with less than 2/3 of a letter grade RMSE error. In the lower figure, we applied this model to correct for the social influence bias and found that, on average, we could reduce the effects by 76.3\%}
       \label{poly-1}
 \end{figure}
 
