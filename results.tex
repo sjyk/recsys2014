@@ -67,7 +67,7 @@ We ran an experiment to illustrate the problems of using correlation instead of 
 In this experiment, we iterated through the initial ratings each of participants in the change group $P_c$.
 For each rating, we randomly sampled a final rating from group $P_n$, the ones that did not change.
 In this model, since we sample final ratings from the no change group, we know that the social influence bias hypothesis is not true, since in distribution those who changed their ratings and those who didn't are exactly the same.
-However, when we calculate the pearson correlation coefficient between $g_f[j] - m[j]$ (the set of differences between the final grade and the median) and $g_i[j] - m[j]$ (the set of differences between the initial grade and the median), we find statistically significant correlations.
+However, when we calculate the Pearson correlation coefficient between $g_f[j] - m[j]$ (the set of differences between the final grade and the median) and $g_i[j] - m[j]$ (the set of differences between the initial grade and the median), we find statistically significant correlations.
 
 {\centering
 \scriptsize
@@ -215,7 +215,7 @@ We held out a random 20\% of rating triplets and calculated the inference error 
 We found that on average over all issues the RMSE was $0.1286$ which corresponds to a little bit more than a + or - grade.
 
 In the second experiment, we simulated a true post-learning setting.
-We used the logistic regression model to predict the probablity that the participant changed their grade.
+We used the logistic regression model to predict the probability that the participant changed their grade.
 Then, if this probability was above a threshold, we used 70\% which was determined empirically, we then apply the polynomial correction model
 to infer the unbiased grade.
 Since the majority of participants did not change their grades, it would not be correct to simply measure RMSE error which would average predictions for those who changed and did not change.
