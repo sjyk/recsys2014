@@ -1,7 +1,7 @@
 \section{Bias Mitigation}
 \label{changemod}
 In our learning phase, we collect rating triplets ($g_i[j]$, $m[j]$, $g_f[j]$), and in our analysis phase, we determine whether the triplets exhibit statistically significant social influence bias. 
-In the mitigation phase, we propose two models: correction model (infers the initial rating given a final rating and the median), and a prediction model (predicts final ratings given an initial rating and the median).
+In the mitigation phase, we propose two models: a correction model (infers the initial rating given a final rating and the median), and a prediction model (predicts final ratings given an initial rating and the median).
 Once trained, the correction model can be applied to correct final grades collected without the triplet (either historical or post-learning).
 The prediction model can be used to analyze properties of the social influence bias eg. are ratings above the median affected the same way as ratings below the median.
 
